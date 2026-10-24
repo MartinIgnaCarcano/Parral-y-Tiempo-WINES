@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Origami · Ficha Técnica</title>
+  <title data-i18n="title.full">Origami · Ficha Técnica</title>
   <link rel="icon" type="image/png" href="../assets/img/logo-link.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -26,6 +26,7 @@
     .topbar { position: absolute; top: 0; left: 0; right: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 2rem; }
     .back { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; text-decoration: none; color: var(--text-2); transition: color 0.3s ease; }
     .back:hover { color: var(--accent); }
+    .topbar-right { display: flex; align-items: center; gap: 1rem; }
     .brand-logo { height: 54px; width: auto; filter: grayscale(100%) brightness(2.2) contrast(1.1); opacity: 0.85; }
 
     /* HERO */
@@ -117,19 +118,20 @@
 <body>
 
   <header class="topbar">
-    <a class="back" href="../index.html">&larr; Volver</a>
+    <a class="back" href="../index.html" data-i18n="back">&larr; Volver</a>
+    <div class="topbar-right" data-lang-slot></div>
   </header>
 
   <section class="hero">
     <span class="hero-kanji" aria-hidden="true">折</span>
     <div class="hero-inner">
       <div class="hero-text">
-        <p class="hero-eyebrow">03 · El Arte del Pliegue</p>
+        <p class="hero-eyebrow">03 · <span data-i18n="origami.subtitle">El Arte del Pliegue</span></p>
         <h1 class="hero-logo">Origami</h1>
-        <p class="hero-variety">100% Sauvignon Blanc · Precisión, papel y frescura</p>
-        <p class="hero-desc">Pliegues, sombras y perspectiva: un blanco fresco que transmite movimiento y libertad.</p>
-        <p class="hero-sub">Este Mendocino &nbsp;·&nbsp; Mendoza</p>
-        <span class="hero-badge">Ficha Técnica</span>
+        <p class="hero-variety">100% Sauvignon Blanc · <span data-i18n="origami.tagline">Precisión, papel y frescura</span></p>
+        <p class="hero-desc"><span data-i18n="origami.description">Pliegues, sombras y perspectiva: un blanco fresco que transmite movimiento y libertad.</span></p>
+        <p class="hero-sub"><span data-i18n="origami.place">Este Mendocino &nbsp;·&nbsp; Mendoza</span></p>
+        <span class="hero-badge" data-i18n="badge">Ficha Técnica</span>
       </div>
       <div class="bottle-wrap">
         <img class="bottle-img" src="../assets/img/botellas/botella-origami.png" alt="Botella Origami">
@@ -138,19 +140,19 @@
   </section>
 
   <div class="band">
-    <p class="band-text">100% Sauvignon Blanc &nbsp;·&nbsp; Este Mendocino &nbsp;·&nbsp; Parral tradicional</p>
+    <p class="band-text"><span data-i18n="origami.band">100% Sauvignon Blanc &nbsp;·&nbsp; Este Mendocino &nbsp;·&nbsp; Parral tradicional</span></p>
   </div>
 
   <main class="content">
 
     <div class="block">
-      <p class="block-label">Viñedo</p>
-      <h2 class="block-title">Origen e Identidad</h2>
+      <p class="block-label" data-i18n="vineyard.label">Viñedo</p>
+      <h2 class="block-title" data-i18n="vineyard.title">Origen e Identidad</h2>
       <div class="vineyard-grid">
-        <div class="card vy-card"><p class="vy-key">Variedad</p><p class="vy-val">100% Sauvignon Blanc</p></div>
-        <div class="card vy-card"><p class="vy-key">Origen</p><p class="vy-val">Este Mendocino (Rivadavia, San Martín)</p></div>
-        <div class="card vy-card"><p class="vy-key">Conducción</p><p class="vy-val">Parral tradicional</p></div>
-        <div class="card vy-card"><p class="vy-key">Suelo</p><p class="vy-val">Franco-arenoso, aluvial de llanura</p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="origami.vineyard.0.0">Variedad</span></p><p class="vy-val">100% Sauvignon Blanc</p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="origami.vineyard.1.0">Origen</span></p><p class="vy-val"><span data-i18n="origami.vineyard.1.1">Este Mendocino (Rivadavia, San Martín)</span></p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="origami.vineyard.2.0">Conducción</span></p><p class="vy-val"><span data-i18n="origami.vineyard.2.1">Parral tradicional</span></p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="origami.vineyard.3.0">Suelo</span></p><p class="vy-val"><span data-i18n="origami.vineyard.3.1">Franco-arenoso, aluvial de llanura</span></p></div>
       </div>
     </div>
 
@@ -159,15 +161,15 @@
     <div class="divider"></div>
 
     <div class="block">
-      <p class="block-label">Procedencia</p>
-      <h2 class="block-title">Este Mendocino</h2>
+      <p class="block-label" data-i18n="map.label">Procedencia</p>
+      <h2 class="block-title"><span data-i18n="origami.map_heading">Este Mendocino</span></h2>
       <div class="card map-section">
         <div class="map-panel" id="map-0">
           <div class="map-header">
-            <p class="map-text">Nacido en la llanura del este mendocino, entre Rivadavia y San Martín: sol generoso, suelos profundos y una brisa constante.</p>
+            <p class="map-text"><span data-i18n="origami.maps.0.text">Nacido en la llanura del este mendocino, entre Rivadavia y San Martín: sol generoso, suelos profundos y una brisa constante.</span></p>
             <a class="map-open" href="https://www.google.com/maps/search/?api=1&amp;query=Rivadavia%2C+Mendoza%2C+Argentina" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              Abrir en Google Maps
+              <span data-i18n="map.open">Abrir en Google Maps</span>
             </a>
           </div>
           <div class="map-frame-wrap">
@@ -177,7 +179,7 @@
               allowfullscreen
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Mapa Este Mendocino, Mendoza">
+              title="Google Maps">
             </iframe>
           </div>
           <div class="map-breadcrumb">
@@ -185,7 +187,7 @@
             <span class="bc-arrow">&rarr;</span>
             <span class="bc-pill">Mendoza</span>
             <span class="bc-arrow">&rarr;</span>
-            <span class="bc-pill">Este Mendocino</span>
+            <span class="bc-pill"><span data-i18n="origami.maps.0.breadcrumb.2">Este Mendocino</span></span>
             <span class="bc-arrow">&rarr;</span>
             <span class="bc-pill">Rivadavia · San Martín</span>
           </div>
@@ -204,6 +206,68 @@
       Mendoza, Argentina
     </div>
   </footer>
+
+  <script>
+    window.I18N = {
+      "en": {
+        "title": "Tech Sheet",
+        "back": "&larr; Back",
+        "badge": "Tech Sheet",
+        "vineyard.label": "Vineyard",
+        "vineyard.title": "Origin and Identity",
+        "process.label": "Winemaking",
+        "process.title": "Process",
+        "map.label": "Provenance",
+        "map.open": "Open in Google Maps",
+        "title.full": "Origami · Tech Sheet",
+        "origami.subtitle": "The Art of Folding",
+        "origami.tagline": "Precision, paper and freshness",
+        "origami.place": "Eastern Mendoza &nbsp;·&nbsp; Mendoza",
+        "origami.band": "100% Sauvignon Blanc &nbsp;·&nbsp; Eastern Mendoza &nbsp;·&nbsp; Traditional pergola",
+        "origami.description": "Folds, shadows and perspective: a fresh white wine that conveys movement and freedom.",
+        "origami.vineyard.0.0": "Variety",
+        "origami.vineyard.1.0": "Origin",
+        "origami.vineyard.1.1": "Eastern Mendoza (Rivadavia, San Martín)",
+        "origami.vineyard.2.0": "Training",
+        "origami.vineyard.2.1": "Traditional pergola",
+        "origami.vineyard.3.0": "Soil",
+        "origami.vineyard.3.1": "Sandy loam, alluvial plain",
+        "origami.map_heading": "Eastern Mendoza",
+        "origami.maps.0.label": "Eastern Mendoza",
+        "origami.maps.0.text": "Born on the plains of eastern Mendoza, between Rivadavia and San Martín: generous sunshine, deep soils and a constant breeze.",
+        "origami.maps.0.breadcrumb.2": "Eastern Mendoza"
+      },
+      "pt": {
+        "title": "Ficha Técnica",
+        "back": "&larr; Voltar",
+        "badge": "Ficha Técnica",
+        "vineyard.label": "Vinhedo",
+        "vineyard.title": "Origem e Identidade",
+        "process.label": "Elaboração",
+        "process.title": "Processo",
+        "map.label": "Procedência",
+        "map.open": "Abrir no Google Maps",
+        "title.full": "Origami · Ficha Técnica",
+        "origami.subtitle": "A Arte da Dobra",
+        "origami.tagline": "Precisão, papel e frescor",
+        "origami.place": "Leste de Mendoza &nbsp;·&nbsp; Mendoza",
+        "origami.band": "100% Sauvignon Blanc &nbsp;·&nbsp; Leste de Mendoza &nbsp;·&nbsp; Latada tradicional",
+        "origami.description": "Dobras, sombras e perspectiva: um branco fresco que transmite movimento e liberdade.",
+        "origami.vineyard.0.0": "Variedade",
+        "origami.vineyard.1.0": "Origem",
+        "origami.vineyard.1.1": "Leste de Mendoza (Rivadavia, San Martín)",
+        "origami.vineyard.2.0": "Condução",
+        "origami.vineyard.2.1": "Latada tradicional",
+        "origami.vineyard.3.0": "Solo",
+        "origami.vineyard.3.1": "Franco-arenoso, aluvial de planície",
+        "origami.map_heading": "Leste de Mendoza",
+        "origami.maps.0.label": "Leste de Mendoza",
+        "origami.maps.0.text": "Nascido na planície do leste de Mendoza, entre Rivadavia e San Martín: sol generoso, solos profundos e uma brisa constante.",
+        "origami.maps.0.breadcrumb.2": "Leste de Mendoza"
+      }
+    };
+  </script>
+  <script src="../assets/js/lang.js"></script>
 
 </body>
 </html>

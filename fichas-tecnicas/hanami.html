@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hanami · Ficha Técnica</title>
+  <title data-i18n="title.full">Hanami · Ficha Técnica</title>
   <link rel="icon" type="image/png" href="../assets/img/logo-link.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -26,6 +26,7 @@
     .topbar { position: absolute; top: 0; left: 0; right: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 2rem; }
     .back { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; text-decoration: none; color: var(--text-2); transition: color 0.3s ease; }
     .back:hover { color: var(--accent); }
+    .topbar-right { display: flex; align-items: center; gap: 1rem; }
     .brand-logo { height: 54px; width: auto; filter: grayscale(100%) brightness(2.2) contrast(1.1); opacity: 0.85; }
 
     /* HERO */
@@ -117,19 +118,20 @@
 <body>
 
   <header class="topbar">
-    <a class="back" href="../index.html">&larr; Volver</a>
+    <a class="back" href="../index.html" data-i18n="back">&larr; Volver</a>
+    <div class="topbar-right" data-lang-slot></div>
   </header>
 
   <section class="hero">
     <span class="hero-kanji" aria-hidden="true">桜</span>
     <div class="hero-inner">
       <div class="hero-text">
-        <p class="hero-eyebrow">01 · La Contemplación del Cerezo</p>
+        <p class="hero-eyebrow">01 · <span data-i18n="hanami.subtitle">La Contemplación del Cerezo</span></p>
         <h1 class="hero-logo">Hanami</h1>
-        <p class="hero-variety">100% Cereza · El renacer</p>
-        <p class="hero-desc">Un perfil elegante y fluido: frutos rojos frescos, pétalos y un final delicado como flor de cerezo cayendo.</p>
+        <p class="hero-variety">100% Cereza · <span data-i18n="hanami.tagline">El renacer</span></p>
+        <p class="hero-desc"><span data-i18n="hanami.description">Un perfil elegante y fluido: frutos rojos frescos, pétalos y un final delicado como flor de cerezo cayendo.</span></p>
         <p class="hero-sub">El Zampal &nbsp;·&nbsp; Tupungato &nbsp;·&nbsp; Mendoza</p>
-        <span class="hero-badge">Ficha Técnica</span>
+        <span class="hero-badge" data-i18n="badge">Ficha Técnica</span>
       </div>
       <div class="bottle-wrap">
         <img class="bottle-img" src="../assets/img/botellas/botella-hanami.png" alt="Botella Hanami">
@@ -138,41 +140,41 @@
   </section>
 
   <div class="band">
-    <p class="band-text">100% Criolla Cereza &nbsp;·&nbsp; El Zampal, Valle de Uco &nbsp;·&nbsp; 950 m.s.n.m</p>
+    <p class="band-text"><span data-i18n="hanami.band">100% Criolla Cereza &nbsp;·&nbsp; El Zampal, Valle de Uco &nbsp;·&nbsp; 950 m.s.n.m</span></p>
   </div>
 
   <main class="content">
 
     <div class="block">
-      <p class="block-label">Viñedo</p>
-      <h2 class="block-title">Origen e Identidad</h2>
+      <p class="block-label" data-i18n="vineyard.label">Viñedo</p>
+      <h2 class="block-title" data-i18n="vineyard.title">Origen e Identidad</h2>
       <div class="vineyard-grid">
-        <div class="card vy-card"><p class="vy-key">Variedad</p><p class="vy-val">100% Cereza</p></div>
-        <div class="card vy-card"><p class="vy-key">Ubicación</p><p class="vy-val">El Zampal, Tupungato, Valle de Uco</p></div>
-        <div class="card vy-card"><p class="vy-key">Conducción</p><p class="vy-val">Parral</p></div>
-        <div class="card vy-card"><p class="vy-key">Suelo</p><p class="vy-val">Franco-Arenoso</p></div>
-        <div class="card vy-card"><p class="vy-key">Altura</p><p class="vy-val">950 m.s.n.m</p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="hanami.vineyard.0.0">Variedad</span></p><p class="vy-val">100% Cereza</p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="hanami.vineyard.1.0">Ubicación</span></p><p class="vy-val"><span data-i18n="hanami.vineyard.1.1">El Zampal, Tupungato, Valle de Uco</span></p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="hanami.vineyard.2.0">Conducción</span></p><p class="vy-val"><span data-i18n="hanami.vineyard.2.1">Parral</span></p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="hanami.vineyard.3.0">Suelo</span></p><p class="vy-val"><span data-i18n="hanami.vineyard.3.1">Franco-Arenoso</span></p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="hanami.vineyard.4.0">Altura</span></p><p class="vy-val"><span data-i18n="hanami.vineyard.4.1">950 m.s.n.m</span></p></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="block">
-      <p class="block-label">Elaboración</p>
-      <h2 class="block-title">Proceso</h2>
+      <p class="block-label" data-i18n="process.label">Elaboración</p>
+      <h2 class="block-title" data-i18n="process.title">Proceso</h2>
       <div class="elab-list">
         <div class="card elab-item">
           <span class="elab-num">1</span>
           <div>
-            <p class="elab-key">Molienda</p>
-            <p class="elab-text">Despalillado delicado para preservar la integridad de la baya y su frescura natural.</p>
+            <p class="elab-key"><span data-i18n="hanami.process.0.0">Molienda</span></p>
+            <p class="elab-text"><span data-i18n="hanami.process.0.1">Despalillado delicado para preservar la integridad de la baya y su frescura natural.</span></p>
           </div>
         </div>
         <div class="card elab-item">
           <span class="elab-num">2</span>
           <div>
-            <p class="elab-key">Fermentación</p>
-            <p class="elab-text">Maceración prefermentativa de 24 horas con levaduras indígenas (nativas). Tras 5 días de contacto con hollejos se realiza control de temperatura para finalizar fermentación del mosto, sin pieles ni semillas, buscando perfil elegante y fluido.</p>
+            <p class="elab-key"><span data-i18n="hanami.process.1.0">Fermentación</span></p>
+            <p class="elab-text"><span data-i18n="hanami.process.1.1">Maceración prefermentativa de 24 horas con levaduras indígenas (nativas). Tras 5 días de contacto con hollejos se realiza control de temperatura para finalizar fermentación del mosto, sin pieles ni semillas, buscando perfil elegante y fluido.</span></p>
           </div>
         </div>
       </div>
@@ -181,15 +183,15 @@
     <div class="divider"></div>
 
     <div class="block">
-      <p class="block-label">Procedencia</p>
+      <p class="block-label" data-i18n="map.label">Procedencia</p>
       <h2 class="block-title">El Zampal, Tupungato</h2>
       <div class="card map-section">
         <div class="map-panel" id="map-0">
           <div class="map-header">
-            <p class="map-text">Ubicado en el corazón del Valle de Uco, El Zampal se encuentra a 950 m.s.n.m en el departamento de Tupungato, Mendoza.</p>
+            <p class="map-text"><span data-i18n="hanami.maps.0.text">Ubicado en el corazón del Valle de Uco, El Zampal se encuentra a 950 m.s.n.m en el departamento de Tupungato, Mendoza.</span></p>
             <a class="map-open" href="https://www.google.com/maps/search/?api=1&amp;query=El+Zampal%2C+Tupungato%2C+Mendoza%2C+Argentina" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              Abrir en Google Maps
+              <span data-i18n="map.open">Abrir en Google Maps</span>
             </a>
           </div>
           <div class="map-frame-wrap">
@@ -199,7 +201,7 @@
               allowfullscreen
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Mapa El Zampal, Mendoza">
+              title="Google Maps">
             </iframe>
           </div>
           <div class="map-breadcrumb">
@@ -207,7 +209,7 @@
             <span class="bc-arrow">&rarr;</span>
             <span class="bc-pill">Mendoza</span>
             <span class="bc-arrow">&rarr;</span>
-            <span class="bc-pill">Valle de Uco</span>
+            <span class="bc-pill"><span data-i18n="hanami.maps.0.breadcrumb.2">Valle de Uco</span></span>
             <span class="bc-arrow">&rarr;</span>
             <span class="bc-pill">El Zampal</span>
           </div>
@@ -226,6 +228,74 @@
       Mendoza, Argentina
     </div>
   </footer>
+
+  <script>
+    window.I18N = {
+      "en": {
+        "title": "Tech Sheet",
+        "back": "&larr; Back",
+        "badge": "Tech Sheet",
+        "vineyard.label": "Vineyard",
+        "vineyard.title": "Origin and Identity",
+        "process.label": "Winemaking",
+        "process.title": "Process",
+        "map.label": "Provenance",
+        "map.open": "Open in Google Maps",
+        "title.full": "Hanami · Tech Sheet",
+        "hanami.subtitle": "Contemplating the Cherry Blossom",
+        "hanami.tagline": "Rebirth",
+        "hanami.band": "100% Criolla Cereza &nbsp;·&nbsp; El Zampal, Uco Valley &nbsp;·&nbsp; 950 m a.s.l.",
+        "hanami.description": "An elegant, flowing profile: fresh red fruit, petals and a delicate finish like a falling cherry blossom.",
+        "hanami.vineyard.0.0": "Variety",
+        "hanami.vineyard.1.0": "Location",
+        "hanami.vineyard.1.1": "El Zampal, Tupungato, Uco Valley",
+        "hanami.vineyard.2.0": "Training",
+        "hanami.vineyard.2.1": "Pergola (parral)",
+        "hanami.vineyard.3.0": "Soil",
+        "hanami.vineyard.3.1": "Sandy loam",
+        "hanami.vineyard.4.0": "Altitude",
+        "hanami.vineyard.4.1": "950 m a.s.l.",
+        "hanami.process.0.0": "Crushing",
+        "hanami.process.0.1": "Gentle destemming to preserve the integrity of the berry and its natural freshness.",
+        "hanami.process.1.0": "Fermentation",
+        "hanami.process.1.1": "24-hour pre-fermentation maceration with indigenous (native) yeasts. After 5 days of skin contact, the temperature is controlled to finish fermenting the must without skins or seeds, seeking an elegant and flowing profile.",
+        "hanami.maps.0.text": "Located in the heart of the Uco Valley, El Zampal sits at 950 m above sea level in the Tupungato department, Mendoza.",
+        "hanami.maps.0.breadcrumb.2": "Uco Valley"
+      },
+      "pt": {
+        "title": "Ficha Técnica",
+        "back": "&larr; Voltar",
+        "badge": "Ficha Técnica",
+        "vineyard.label": "Vinhedo",
+        "vineyard.title": "Origem e Identidade",
+        "process.label": "Elaboração",
+        "process.title": "Processo",
+        "map.label": "Procedência",
+        "map.open": "Abrir no Google Maps",
+        "title.full": "Hanami · Ficha Técnica",
+        "hanami.subtitle": "A Contemplação da Cerejeira",
+        "hanami.tagline": "O renascer",
+        "hanami.band": "100% Criolla Cereza &nbsp;·&nbsp; El Zampal, Vale de Uco &nbsp;·&nbsp; 950 m de altitude",
+        "hanami.description": "Um perfil elegante e fluido: frutas vermelhas frescas, pétalas e um final delicado como uma flor de cerejeira caindo.",
+        "hanami.vineyard.0.0": "Variedade",
+        "hanami.vineyard.1.0": "Localização",
+        "hanami.vineyard.1.1": "El Zampal, Tupungato, Vale de Uco",
+        "hanami.vineyard.2.0": "Condução",
+        "hanami.vineyard.2.1": "Latada (parral)",
+        "hanami.vineyard.3.0": "Solo",
+        "hanami.vineyard.3.1": "Franco-arenoso",
+        "hanami.vineyard.4.0": "Altitude",
+        "hanami.vineyard.4.1": "950 m de altitude",
+        "hanami.process.0.0": "Moagem",
+        "hanami.process.0.1": "Desengace delicado para preservar a integridade da baga e o seu frescor natural.",
+        "hanami.process.1.0": "Fermentação",
+        "hanami.process.1.1": "Maceração pré-fermentativa de 24 horas com leveduras indígenas (nativas). Após 5 dias de contato com as cascas, faz-se o controle de temperatura para finalizar a fermentação do mosto, sem cascas nem sementes, buscando um perfil elegante e fluido.",
+        "hanami.maps.0.text": "Localizado no coração do Vale de Uco, El Zampal fica a 950 m de altitude no departamento de Tupungato, Mendoza.",
+        "hanami.maps.0.breadcrumb.2": "Vale de Uco"
+      }
+    };
+  </script>
+  <script src="../assets/js/lang.js"></script>
 
 </body>
 </html>

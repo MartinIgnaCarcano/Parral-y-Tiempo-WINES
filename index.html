@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TÁNDEM WINES</title>
+<title>PARRAL Y TIEMPO WINES</title>
 <link rel="icon" type="image/png" href="assets/img/logo-link.png">
 <style>
   :root {
@@ -382,41 +382,41 @@
 
   <div class="nav">
     <button class="nav__dot is-active" data-index="0" aria-label="Intro"></button>
-    <button class="nav__dot" data-index="1" aria-label="Origen de Tandem"></button>
-    <button class="nav__dot" data-index="2" aria-label="Origen"></button>
-    <button class="nav__dot" data-index="3" aria-label="Colección de Vinos"></button>
-    <button class="nav__dot" data-index="4" aria-label="Cobertura y Contacto"></button>
+    <button class="nav__dot" data-index="1" aria-label="Origen de Parral y Tiempo" data-i18n-attr="aria-label:nav.story"></button>
+    <button class="nav__dot" data-index="2" aria-label="Origen" data-i18n-attr="aria-label:nav.origin"></button>
+    <button class="nav__dot" data-index="3" aria-label="Colección de Vinos" data-i18n-attr="aria-label:nav.wines"></button>
+    <button class="nav__dot" data-index="4" aria-label="Cobertura y Contacto" data-i18n-attr="aria-label:nav.contact"></button>
   </div>
 
   <div class="track" id="track">
     <!-- ESCENA 1: INTRO -->
     <section class="scene scene--intro is-active">
       <div class="intro__wrap">
-        <div class="intro__eyebrow">Proyecto Boutique</div>
+        <div class="intro__eyebrow" data-i18n="intro.eyebrow">Proyecto Boutique</div>
         <div class="intro__logo">
           <img src="assets/img/logo-parral-y-tiempo.png" alt="PARRAL Y TIEMPO WINES Logo" class="intro__logo-img tandem-logo-silver">
         </div>
-        <p class="intro__sub">El momento perfecto empieza acá. <br>Deslizá para conocernos.</p>
-        <div class="intro__scroll"><span class="intro__scroll-desktop">Scroll Horizontal</span><span class="intro__scroll-mobile">Deslizá</span></div>
+        <p class="intro__sub" data-i18n="intro.sub">El momento perfecto empieza acá. <br>Deslizá para conocernos.</p>
+        <div class="intro__scroll"><span class="intro__scroll-desktop" data-i18n="intro.scroll">Scroll Horizontal</span><span class="intro__scroll-mobile" data-i18n="intro.swipe">Deslizá</span></div>
       </div>
     </section>
 
-    <!-- ESCENA 2: HISTORIA DE TANDEM WINES -->
+    <!-- ESCENA 2: HISTORIA DE PARRAL Y TIEMPO -->
     <section class="scene scene--story">
       <div class="story__wrap">
         <div class="story__left">
-          <div class="story__eyebrow">Nuestra historia</div>
-          <h2 class="story__title">De la oficina al viñedo: el origen de <em>Tandem</em></h2>
-          <p class="story__text">
+          <div class="story__eyebrow" data-i18n="story.eyebrow">Nuestra historia</div>
+          <h2 class="story__title" data-i18n="story.title">De la oficina al viñedo: el origen de <em>Parral y Tiempo</em></h2>
+          <p class="story__text" data-i18n="story.text1">
             Todo gran proyecto empieza con una charla simple y un poco de audacia. La nuestra empezó entre las paredes de un depósito donde compartíamos oficina. Todos los días, mate de por medio, la conversación era siempre la misma: cómo serían los vinos que soñábamos hacer si el proyecto fuera verdaderamente nuestro.
           </p>
-          <p class="story__text">
-            Trabajar para proyectos consagrados nos dio la escuela, pero las ganas de crear algo propio y genuino nos dieron el impulso. Así nació <strong>Tandem Wines</strong>. Como en una bicicleta tándem, acá no hay copilotos: somos dos amigos coordinando el ritmo, pedaleando a la par y empujando a puro pulmón hacia el mismo horizonte.
+          <p class="story__text" data-i18n="story.text2">
+            Trabajar para proyectos consagrados nos dio la escuela, pero las ganas de crear algo propio y genuino nos dieron el impulso. Así nació <strong>Parral y Tiempo</strong>. Como el buen vino que pide tiempo y sombra, este proyecto se armó sin atajos: somos dos amigos compartiendo el camino, cuidando cada detalle a la par y empujando con convicción hacia el mismo horizonte.
           </p>
 
           <div class="story__manifesto">
-            <div class="story__manifesto-title">Vinos de Sed</div>
-            <div class="story__manifesto-body">
+            <div class="story__manifesto-title" data-i18n="story.manifesto.title">Vinos de Sed</div>
+            <div class="story__manifesto-body" data-i18n="story.manifesto.body">
               Vinos pensados para tomarse sin solemnidad ni etiquetas pesadas. Ágiles, frescos, ligeros y súper aromáticos, de esos que te invitan a buscar de inmediato la segunda copa. Nos apasiona la tomabilidad, la fruta limpia y la fluidez.
             </div>
           </div>
@@ -429,15 +429,15 @@
             <div class="story__pillars">
               <div class="pillar-item">
                 <span class="pillar-num">01</span>
-                <span class="pillar-name">Pasión</span>
+                <span class="pillar-name" data-i18n="story.pillar1">Pasión</span>
               </div>
               <div class="pillar-item">
                 <span class="pillar-num">02</span>
-                <span class="pillar-name">Compromiso</span>
+                <span class="pillar-name" data-i18n="story.pillar2">Compromiso</span>
               </div>
               <div class="pillar-item">
                 <span class="pillar-num">03</span>
-                <span class="pillar-name">Amistad</span>
+                <span class="pillar-name" data-i18n="story.pillar3">Amistad</span>
               </div>
             </div>
           </div>
@@ -449,9 +449,9 @@
     <section class="scene scene--origin">
       <div class="origin__wrap">
         <div class="origin__left">
-          <div class="origin__eyebrow">Origen · Terroir</div>
-          <h2 class="origin__title">La identidad de <em>nuestra tierra</em> en cada sorbo</h2>
-          <p class="origin__lead">
+          <div class="origin__eyebrow" data-i18n="origin.eyebrow">Origen · Terroir</div>
+          <h2 class="origin__title" data-i18n="origin.title">La identidad de <em>nuestra tierra</em> en cada sorbo</h2>
+          <p class="origin__lead" data-i18n="origin.lead">
             Forjado en el corazón del este mendocino, este vino nace de un terroir único, 
             marcado por la generosidad del sol, suelos profundos y la brisa constante que 
             abraza nuestra llanura. Aquí, la tierra mendocina expresa su versión más libre 
@@ -461,22 +461,22 @@
           </p>
           <div class="origin__meta">
             <div class="origin__meta-item">
-              <div class="origin__meta-label">Región</div>
-              <div class="origin__meta-value">Este Mendocino</div>
+              <div class="origin__meta-label" data-i18n="origin.region">Región</div>
+              <div class="origin__meta-value" data-i18n="origin.region.value">Este Mendocino</div>
             </div>
             <div class="origin__meta-item">
-              <div class="origin__meta-label">Suelo</div>
-              <div class="origin__meta-value">Franco-arenoso <br> Aluvial de llanura</div>
+              <div class="origin__meta-label" data-i18n="origin.soil">Suelo</div>
+              <div class="origin__meta-value" data-i18n="origin.soil.value">Franco-arenoso <br> Aluvial de llanura</div>
             </div>
             <div class="origin__meta-item">
-              <div class="origin__meta-label">Clima</div>
-              <div class="origin__meta-value">Continental templado<br>Gran insolación y amplitud térmica</div>
+              <div class="origin__meta-label" data-i18n="origin.climate">Clima</div>
+              <div class="origin__meta-value" data-i18n="origin.climate.value">Continental templado<br>Gran insolación y amplitud térmica</div>
             </div>
           </div>
         </div>
         <div class="origin__right">
           <div class="map">
-            <svg class="map__svg" viewBox="150 14 305 415" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de Mendoza por departamentos">
+            <svg class="map__svg" viewBox="150 14 305 415" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de Mendoza por departamentos" data-i18n-attr="aria-label:origin.map">
               <path class="province" id="mza-san-martin" data-name="San Martín" fill-rule="evenodd" d="M344.4,82.6L333.4,82.3L332.6,94.1L327.8,94.1L320.9,98.2L320.9,102.5L320.9,104.6 L320.9,107.8L314.9,104.6L315.1,104.2L313.7,103.4L311.5,102L310.3,101.3L309.4,101.3 L309.6,100.8L306,99.8L304.8,101.5L303.6,101L303.8,100.8L303.4,100.6L 302.9,100.3L301.4,99.6L301.2,99.4L301.2,99.1L300.2,100.3L299.8,99.4L299.8,99.1 L300,99.1L300.5,98.2L300.7,97.7L301,97.4L301,97L300.7,96.7L301,96.7 L301,96.5L301.2,96.5L301.2,96.2L301.2,96L301.2,95.8L301.4,95.8L301.7,95.5 L301.7,95.3L301.9,95.3L301.7,95L301.9,95L301.9,94.8L302.2,94.8L302.2,95 L302.4,95L302.6,95L302.6,94.8L302.6,94.6L302.4,94.6L302.4,94.3L302.6,94.1 L302.9,94.1L303.1,94.1L302.9,93.8L302.6,93.8L302.4,93.8L302.4,93.6L302.6,93.6 L302.9,93.6L303.1,93.6L303.1,93.4L302.9,93.1L303.1,93.1L303.1,92.9L303.4,92.9 L303.6,92.9L303.8,92.9L303.6,92.6L303.6,92.4L303.6,92.2L303.8,92.2L304.1,92.2 L304.3,92.2L304.6,92.2L304.6,91.9L304.8,91.9L304.8,91.7L304.8,91.4L305,91.4 L305.3,91.4L305.5,91.4L305.5,91.2L305.5,91L305.5,90.7L305.5,90.5L305.5,90.2 L305.8,90.2L306,90.2L306,90L306,89.8L306,89.5L306.2,89.5L306.5,89.5 L306.5,89.3L306.7,89.3L306.7,89L306.5,89L306.5,88.8L306.2,88.8L306.2,88.6 L306.2,88.3L306.2,88.1L306.5,88.1L306.7,88.3L307,88.3L307,88.6L307.2,88.6 L307.2,88.3L307.2,88.1L307.2,87.8L307.4,87.8L307.4,87.6L307.7,87.6L307.7,87.4 L307.7,87.1L307.9,87.1L307.9,86.9L307.9,86.6L307.7,86.6L307.9,86.6L307.9,86.4 L308.2,86.4L308.2,86.2L308.2,85.9L307.9,85.9L307.9,85.7L307.9,85.4L307.9,85.2 L308.2,85.2L308.2,85L308.2,84.7L308.2,84.5L308.2,84.2L307.9,84.2L307.9,84 L307.7,84L307.7,83.8L307.9,83.8L307.9,83.5L307.9,83.3L308.2,83.3L308.2,83 L308.2,82.8L308.2,82.6L307.9,82.6L307.9,82.3L308.4,81.8L309.1,81.4L309.4,80.9 L309.6,80.2L309.8,79.9L309.8,79.7L309.8,79.4L310.1,79.2L310.3,79.2L310.6,79.4 L310.8,79.4L311,79.2L311.3,79.2L311.5,79L311.8,79L312,79L312.2,79 L312.2,78.7L312.2,78.5L312.5,78.2L312.7,78.2L313,78L313.2,78L313.4,78 L313.7,78L313.9,77.8L314.2,77.8L314.4,77.5L314.6,77.5L314.6,77.3L314.9,77.3 L315.1,77L315.4,77L315.4,76.8L315.6,76.8L315.8,76.6L316.1,76.6L316.1,76.3 L316.3,76.3L316.3,76.1L316.6,76.1L316.8,75.8L317,75.8L317.3,75.6L317.5,75.6 L317.5,75.4L317.5,75.1L317.5,74.9L317.8,74.6L318,74.6L318.2,74.6L318.5,74.4 L318.5,74.2L318.7,74.2L319,74.2L329.5,74.6L344.2,75.4L344.4,82.6z" />
               <path class="province" id="mza-santa-rosa" data-name="Santa Rosa" fill-rule="evenodd" d="M344.4,82.6L344.6,93.1L370.1,97.4L364.8,119L364.1,119L362.9,124.6L362.6,125.8 L363.1,126L363.1,127.4L363.1,129.1L362.9,130.8L362.2,150.2L375.1,150.5L375.1,165.8 L375.4,169.4L375.6,174.5L370.6,174.7L367.4,181L347,180.5L341.8,180.2L341.5,180.2 L341.3,180.2L341,180.2L341,180L340.8,180L340.6,180L340.3,179.8 L340.1,179.8L339.8,179.8L339.6,180L339.4,179.8L339.1,179.8L338.9,179.8 L338.6,179.8L338.4,179.8L338.2,179.8L337.9,180L337.7,180L337.4,180 L337.2,180L337,180L336.7,180L336.5,180L336.2,180.2L336,180.2 L335.8,180.2L335.5,180.2L335.3,180.2L335,180.2L334.8,180.2L334.6,180.2 L334.3,180.2L334.1,180.2L333.8,180.2L333.6,180.2L333.4,180.2L333.1,180.2 L332.9,180.2L332.6,180.2L332.4,180.2L332.2,180.2L331.9,180.2L331.7,180.2 L331.4,180.2L331.2,180.2L331,180.2L330.7,180.2L330.5,180.2L330.2,180.2L330,180.2 L329.8,180.2L329.5,180.2L329.3,180.2L329,180.2L328.8,180.2L328.8,180 L328.6,180L328.3,180L328.1,180L327.8,180L327.6,179.8L327.4,179.8 L327.1,179.8L326.9,179.8L326.6,179.5L326.4,179.5L326.2,179.5L325.9,179.3 L325.7,179.3L325.4,179.3L325.4,179L325.2,179L325,179L324.7,178.8L324.5,178.8 L324.5,178.6L324.2,178.6L324,178.6L323.8,178.6L323.5,178.3L323.3,178.3 L323,178.3L322.8,178.1L322.6,178.1L322.3,178.1L322.1,178.1L321.8,178.1 L321.6,178.1L321.4,178.1L321.1,178.1L320.9,178.1L320.6,178.1L320.4,177.8 L320.2,177.8L319.9,177.8L319.7,177.8L319.4,177.8L319.2,177.8L319,177.8 L318.7,177.8L318.5,177.8L318.2,177.8L318,177.8L317.8,177.8L317.8,178.1 L317.5,178.1L317.3,178.1L317,178.1L316.8,178.3L316.6,178.3L316.3,178.6 L316.1,178.6L315.8,178.8L315.6,179L315.4,179L315.1,179.3L314.9,179.3L314.6,179.5 L314.4,179.5L314.4,167.3L314.6,167.3L314.9,167.3L315.1,167.3L315.4,167.3L315.6,167.3 L315.8,167L316.1,167L316.3,167L316.6,166.8L316.8,166.8L317,166.8 L317.3,166.8L317.5,166.8L317.8,166.8L318,166.8L318.2,167L318.5,167 L318.7,167.3L319,167.3L319.2,167.3L319.4,167.3L319.7,167.3L319.9,167.3 L320.2,167.5L320.4,167.3L320.6,167L320.9,167L321.1,167L321.4,166.8 L320.9,128.6L320.9,128.4L320.9,120.2L320.9,117.8L320.6,117.4L320.6,117.1 L320.9,116.4L320.6,112.1L320.6,110.6L320.9,109.9L321.6,108.2L320.9,107.8L 320.9,104.6L320.9,102.5L320.9,98.2L327.8,94.1L332.6,94.1L333.4,82.3L344.4,82.6 z" />
               <path class="province" id="mza-la-paz" data-name="La Paz" fill-rule="evenodd" d="M370.1,97.4L378,98.6L399.1,102.2L399.1,102.5L399.1,102.7L399.1,103L399.1,103.2 L399.1,103.4L399.1,103.7L399.1,103.9L399.4,103.9L399.4,104.2L399.4,104.4 L399.6,104.4L399.6,104.6L399.8,104.9L400.1,105.1L400.1,105.4L400.1,105.6 L400.1,105.8L400.1,106.1L400.1,106.3L400.1,106.6L400.1,106.8L399.8,107 L399.8,107.3L399.8,107.5L399.8,107.8L399.6,108L399.6,108.2L399.6,108.5L399.6,108.7 L399.6,109L399.6,109.2L399.6,109.4L399.6,109.7L399.6,109.9L399.6,110.2 L399.6,110.4L399.8,110.6L399.8,110.9L399.8,111.1L399.8,111.4L399.8,111.6 L399.8,111.8L400.1,111.8L400.1,112.1L400.1,112.3L400.1,112.6L400.1,112.8L400.1,113 L400.1,113.3L400.1,113.5L400.1,113.8L400.1,114L400.1,114.2L400.1,114.5 L400.1,114.7L400.1,115L400.1,115.2L400.3,115.4L400.6,115.7L400.8,115.7 L400.8,115.9L401,115.9L401.3,116.2L401.3,116.4L401.5,116.4L401.5,116.6L401.8,116.9 L402,117.1L402,117.4L402,117.6L402,117.8L402,118.1L401.8,118.3 L401.8,118.6L401.8,118.8L401.8,119L401.8,119.3L401.8,119.5L401.8,119.8 L401.8,120L401.8,120.2L401.8,120.5L402,120.7L402.2,121L402.2,121.2L402.2,121.4 L402,121.7L402,121.9L401.8,122.2L401.8,122.4L401.5,122.4L401.8,122.6 L401.8,122.9L402,122.9L402,123.1L402,123.4L402,123.6L402,123.8 L402,124.1L402,124.3L402,124.6L402,124.8L402,125L402,125.3L402.2,125.5 L402.2,125.8L402.5,125.8L402.5,126L402.7,126L402.7,126.2L403,126.5 L403,126.7L403.2,127L403.2,127.2L403.4,127.4L403.4,127.7L403.7,127.7 L403.7,127.9L403.9,127.9L403.9,128.2L404.2,128.4L404.4,128.4L404.6,128.4 L404.6,128.6L404.6,128.9L404.9,129.1L404.9,129.4L404.9,129.6L405.1,129.8L405.1,130.1 L405.1,130.3L405.4,130.6L405.4,130.8L405.4,131L405.6,131.3L405.6,131.5 L405.8,131.8L405.8,132L406.1,132L406.1,132.2L406.3,132.5L406.6,132.5 L406.8,132.5L407,132.7L407.3,132.7L407.5,133L407.8,133.2L407.8,133.4 L407.8,133.7L408,133.9L408,134.2L408,134.4L408,134.6L408.2,134.6L408.2,134.9 L408.5,135.1L408.7,135.4L408.7,135.6L409,135.6L409,135.8L409.2,135.8 L409.4,136.1L409.7,136.1L409.7,136.3L409.9,136.3L410.2,136.3L410.4,136.6 L410.6,136.6L410.9,136.6L411.1,136.6L411.4,136.8L411.6,136.8L411.8,136.8 L412.1,137L412.3,137.3L412.3,137.5L412.3,137.8L412.3,138L412.3,138.2 L412.3,138.5L412.6,138.7L412.8,138.7L412.8,139L412.8,139.2L412.6,139.4L412.6,139.7 L412.6,139.9L412.6,140.2L412.6,140.4L412.6,140.6L412.6,140.9L412.8,141.1L412.8,141.4 L412.8,141.6L412.8,141.8L412.8,142.1L412.8,142.3L413,142.6L413,142.8L413,143 L413,143.3L413,143.5L413,143.8L413.3,144L413.5,144.2L413.8,144.5L414,144.5 L414,144.7L414.2,144.7L414.5,145L414.7,145.2L415,145.2L415,145.4L 415.2,145.4L415.4,145.7L415.7,145.7L415.9,145.7L416.2,145.9L416.4,145.9L 416.6,146.2L416.9,146.2L417.1,146.4L417.4,146.4L417.6,146.4L417.8,146.6L 418.1,146.9L418.3,146.9L418.6,147.1L418.8,147.4L419,147.6L419.3,147.6L419.3,147.8 L419.5,147.8L419.8,148.1L420,148.3L420.2,148.3L420.2,148.6L420.5,148.8L 420.7,149L420.7,149.3L421,149.3L421,149.5L421,149.8L421,150L 421,150.2L421,150.5L421,150.7L421,151L421,151.2L421,151.4L 421.2,151.4L421.2,151.7L421.2,151.9L421.4,151.9L421.4,152.2L421.7,152.4L421.9,152.6 L422.2,152.6L422.2,152.9L422.4,153.1L422.6,153.4L422.9,153.4L422.9,153.6 L423.1,153.6L423.1,153.8L423.4,154.1L423.6,154.3L423.6,154.6L423.8,154.6 L423.8,154.8L424.1,155L424.3,155.3L424.3,155.5L424.3,155.8L424.3,156 L424.3,156.2L424.3,156.5L424.6,156.7L424.8,157L424.8,157.2L425,157.2L425,157.4 L425.3,157.7L425.3,157.9L425.5,158.2L425.8,158.4L425.8,158.6L426,158.6 L426,158.9L426.2,158.9L426.5,159.1L426.7,159.1L427,159.1L427.2,159.4 L427.4,159.4L427.7,159.6L427.9,159.6L428.2,159.8L428.4,159.8L428.4,160.1 L428.4,160.3L428.6,160.3L428.6,160.6L428.9,160.8L429.1,160.8L429.4,161L429.6,161 L429.8,161L430.1,161L430.3,161L430.6,161.3L430.8,161.3L430.8,161.5L431,161.5 L431.3,161.8L431.5,161.8L431.5,162L431.8,162L431.8,162.2L431.8,162.5 L431.8,162.7L431.8,163L431.8,163.2L431.8,163.4L431.8,163.7L432,163.9 L432,164.2L432,164.4L432.2,164.6L432.2,164.9L432.2,165.1L432.5,165.1 L432.5,165.4L432.5,165.6L432.7,165.8L432.7,166.1L432.7,166.3L432.5,166.6L432.5,167 L432.5,167.5L432.2,168.5L431.8,169.4L431.8,169.9L432,170.2L432,170.4L432,170.6 L432,170.9L432,171.1L432,171.4L432,171.6L432,171.8L432,172.1 L432,172.3L432,172.6L431.8,172.8L431.5,173L431.5,173.3L431.3,173.3 L431.3,173.5L431.3,173.8L431.3,174L431.5,174.2L431.8,174.5L432,174.5L432,174.7 L432.2,174.7L432.2,175L432.2,175.2L432.2,175.4L432,175.4L432,175.7 L432,175.9L431.8,175.9L431.5,176.2L431.3,176.4L431,176.4L431,176.6 L430.8,176.6L430.8,176.9L430.8,177.1L430.6,177.4L430.8,177.4L430.8,177.6L 430.8,177.8L431,177.8L431,178.1L431.3,178.3L431.3,178.6L431.3,178.8L431.3,179 L431.3,179.3L431.5,179.5L431.5,179.8L431.5,180L431.3,180L431.3,180.2 L431,180.5L430.8,180.7L430.6,180.5L430.3,180.5L430.3,180.2L430.1,180.2L429.8,180.2 L429.6,180L429.4,180L429.4,180.2L429.1,180.2L429.1,180.5L429.1,180.7L429.1,181 L429.1,181.2L428.9,181.4L428.6,181.4L428.4,181.2L428.2,181.2L427.9,181L 427.7,181L427.4,181.2L427.4,181.4L427.4,181.7L427.2,181.9L427.2,182.2L 427.2,182.4L427.2,182.6L427,182.9L427,183.1L427,183.4L427.2,183.6L427.2,183.8 L427.2,184.1L427.2,184.3L427.2,184.6L427.2,184.8L403.2,184.6L402.2,172.6 L378,174.2L375.6,174.5L375.4,169.4L375.1,165.8L375.1,150.5L362.2,150.2L 362.9,130.8L363.1,129.1L363.1,127.4L363.1,126L362.6,125.8L362.9,124.6L364.1,119 L364.8,119L370.1,97.4z" />
@@ -531,11 +531,11 @@
               <div class="sansho__eyebrow">
                 <span class="sansho__eyebrow-num">壱</span>
                 <span class="sansho__eyebrow-line"></span>
-                <span>01 · La Contemplación del Cerezo</span>
+                <span data-i18n="hanami.eyebrow">01 · La Contemplación del Cerezo</span>
               </div>
               <h2 class="sansho__title">HANAMI<br><em>Cereza</em></h2>
-              <div class="sansho__divider"><span>El renacer</span></div>
-              <p class="sansho__text">
+              <div class="sansho__divider"><span data-i18n="hanami.tagline">El renacer</span></div>
+              <p class="sansho__text" data-i18n="hanami.text">
                 Bajo aquel <em>sakura</em> germina una reflexión sobre la vida: 
                 la naturaleza nos revela que siempre es posible renacer, 
                 incluso tras las estaciones más ásperas. Y cuando el ciclo 
@@ -543,11 +543,11 @@
                 sino como el regreso a un sentido eterno de pertenencia.
               </p>
               <div class="sansho__meta">
-                <div class="sansho__meta-item">Variedad<strong>100% Cereza</strong></div>
-                <div class="sansho__meta-item">Origen<strong>El Zampal - Tupungato</strong></div>
-                <div class="sansho__meta-item">Conduccion<strong>Parral tradicional</strong></div>
+                <div class="sansho__meta-item"><span data-i18n="wine.variety">Variedad</span><strong>100% Cereza</strong></div>
+                <div class="sansho__meta-item"><span data-i18n="wine.origin">Origen</span><strong>El Zampal - Tupungato</strong></div>
+                <div class="sansho__meta-item"><span data-i18n="wine.training">Conducción</span><strong data-i18n="wine.training.value">Parral tradicional</strong></div>
               </div>
-              <a class="sansho__buy" href="fichas-tecnicas/hanami.html" target="_blank" rel="noopener">Ver Ficha Técnica</a>
+              <a class="sansho__buy" href="fichas-tecnicas/hanami.html" target="_blank" rel="noopener" data-i18n="wine.sheet">Ver Ficha Técnica</a>
             </div>
             <div class="sansho__right">
               <div class="sansho__figure sansho__figure--zoom">
@@ -565,11 +565,11 @@
               <div class="sansho__eyebrow">
                 <span class="sansho__eyebrow-num">弐</span>
                 <span class="sansho__eyebrow-line"></span>
-                <span>02 · El Felino Nocturno</span>
+                <span data-i18n="ieneko.eyebrow">02 · El Felino Nocturno</span>
               </div>
               <h2 class="sansho__title">IENEKO<br><em>Bonarda - Cereza</em></h2>
-              <div class="sansho__divider"><span>Espíritu joven</span></div>
-              <p class="sansho__text">
+              <div class="sansho__divider"><span data-i18n="ieneko.tagline">Espíritu joven</span></div>
+              <p class="sansho__text" data-i18n="ieneko.text">
                 Cuando la luz se desvanece y la oscuridad nos envuelve, 
                 solo nuestros instintos pueden guiarnos hacia lo que habita en nuestro 
                 interior. Como el <em>neko</em> que descansa sobre el tejado: sereno, 
@@ -577,11 +577,11 @@
                 que aún queda por descubrir
               </p>
               <div class="sansho__meta">
-                <div class="sansho__meta-item">Variedad<strong><span class="nowrap">60% Bonarda</span><br><span class="nowrap">40% Cereza</span></strong></div>
-                <div class="sansho__meta-item">Origen<strong>Este Mendocino - Tupungato</strong></div>
-                <div class="sansho__meta-item">Conduccion<strong>Parral tradicional</strong></div>
+                <div class="sansho__meta-item"><span data-i18n="wine.variety">Variedad</span><strong><span class="nowrap">60% Bonarda</span><br><span class="nowrap">40% Cereza</span></strong></div>
+                <div class="sansho__meta-item"><span data-i18n="wine.origin">Origen</span><strong data-i18n="ieneko.origin.value">Este Mendocino - Tupungato</strong></div>
+                <div class="sansho__meta-item"><span data-i18n="wine.training">Conducción</span><strong data-i18n="wine.training.value">Parral tradicional</strong></div>
               </div>
-              <a class="sansho__buy" href="fichas-tecnicas/ieneko.html" target="_blank" rel="noopener">Ver Ficha Técnica</a>
+              <a class="sansho__buy" href="fichas-tecnicas/ieneko.html" target="_blank" rel="noopener" data-i18n="wine.sheet">Ver Ficha Técnica</a>
             </div>
             <div class="sansho__right">
               <div class="sansho__figure sansho__figure--zoom">
@@ -599,21 +599,21 @@
               <div class="sansho__eyebrow">
                 <span class="sansho__eyebrow-num">参</span>
                 <span class="sansho__eyebrow-line"></span>
-                <span>03 · El Arte del Pliegue</span>
+                <span data-i18n="origami.eyebrow">03 · El Arte del Pliegue</span>
               </div>
               <h2 class="sansho__title">ORIGAMI<br><em>Sauvignon Blanc</em></h2>
-              <div class="sansho__divider"><span>Precisión, papel y frescura</span></div>
-              <p class="sansho__text">
+              <div class="sansho__divider"><span data-i18n="origami.tagline">Precisión, papel y frescura</span></div>
+              <p class="sansho__text" data-i18n="origami.text">
                 Una segunda figura de origami se suma al trazo lineal, y las sombras
                 bajo cada pliegue abren una <em>perspectiva tridimensional</em>.
                 Genera sensación de movimiento y libertad.
               </p>
               <div class="sansho__meta">
-                <div class="sansho__meta-item">Variedad<strong>100% Sauvignon Blanc</strong></div>
-                <div class="sansho__meta-item">Origen<strong>Este Mendocino</strong></div>
-                <div class="sansho__meta-item">Conduccion<strong>Parral tradicional</strong></div>
+                <div class="sansho__meta-item"><span data-i18n="wine.variety">Variedad</span><strong>100% Sauvignon Blanc</strong></div>
+                <div class="sansho__meta-item"><span data-i18n="wine.origin">Origen</span><strong data-i18n="origami.origin.value">Este Mendocino</strong></div>
+                <div class="sansho__meta-item"><span data-i18n="wine.training">Conducción</span><strong data-i18n="wine.training.value">Parral tradicional</strong></div>
               </div>
-              <a class="sansho__buy" href="fichas-tecnicas/origami.html" target="_blank" rel="noopener">Ver Ficha Técnica</a>
+              <a class="sansho__buy" href="fichas-tecnicas/origami.html" target="_blank" rel="noopener" data-i18n="wine.sheet">Ver Ficha Técnica</a>
             </div>
             <div class="sansho__right">
               <div class="sansho__figure sansho__figure--zoom">
@@ -625,7 +625,7 @@
           </article>
         </div>
 
-        <nav class="sansho__tabs" aria-label="Selección de vinos">
+        <nav class="sansho__tabs" aria-label="Selección de vinos" data-i18n-attr="aria-label:wine.tabs">
           <button class="sansho__tab is-active" data-tab="hanami">
             <span class="sansho__tab-num">壱</span>
             <span class="sansho__tab-kanji">桜</span>
@@ -651,9 +651,9 @@
     <section class="scene scene--presence">
       <div class="presence__wrap">
         <div class="presence__left">
-          <div class="presence__eyebrow">Cobertura Nacional · Red Comercial</div>
-          <h2 class="presence__title">Expandiendo nuestro <em>espíritu</em> en Argentina</h2>
-          <p class="presence__lead">
+          <div class="presence__eyebrow" data-i18n="presence.eyebrow">Cobertura Nacional · Red Comercial</div>
+          <h2 class="presence__title" data-i18n="presence.title">Expandiendo nuestro <em>espíritu</em> en Argentina</h2>
+          <p class="presence__lead" data-i18n="presence.lead">
             Nuestros vinos de sed atraviesan para encontrarse con amantes del vino en los puntos más representativos del país. Actualmente estamos presentes en provincias estratégicas.
           </p>
 
@@ -665,17 +665,17 @@
           </div>
 
           <div class="presence__contact">
-            <div class="contact-label">Contacto Comercial & Distribución</div>
+            <div class="contact-label" data-i18n="presence.contact">Contacto Comercial & Distribución</div>
             <div class="contact-list">
               <a href="mailto:hanami@outlook.com.ar" class="contact-item">
                 <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
                 hanami@outlook.com.ar
               </a>
-              <a href="https://wa.me/5492613747660?text=%C2%A1Hola%20T%C3%A1ndem%20Wines!%20Vi%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20vinos." target="_blank" rel="noopener" class="contact-item" title="Escribinos por WhatsApp">
+              <a href="https://wa.me/5492613747660?text=%C2%A1Hola%20Parral%20y%20Tiempo%20Wines!%20Vi%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20vinos." target="_blank" rel="noopener" class="contact-item" title="Escribinos por WhatsApp" data-i18n-attr="title:wa.title">
                 <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                 +54 9 261 374-7660
               </a>
-              <a href="https://wa.me/5492613603953?text=%C2%A1Hola%20T%C3%A1ndem%20Wines!%20Vi%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20vinos." target="_blank" rel="noopener" class="contact-item" title="Escribinos por WhatsApp">
+              <a href="https://wa.me/5492613603953?text=%C2%A1Hola%20Parral%20y%20Tiempo%20Wines!%20Vi%20su%20p%C3%A1gina%20web%20y%20me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre%20sus%20vinos." target="_blank" rel="noopener" class="contact-item" title="Escribinos por WhatsApp" data-i18n-attr="title:wa.title">
                 <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
                 +54 9 261 360-3953
               </a>
@@ -685,7 +685,7 @@
 
         <div class="presence__right">
           <div class="arg-map-container">
-            <svg class="arg-svg" viewBox="286 40 428 920" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de Argentina por provincias">
+            <svg class="arg-svg" viewBox="286 40 428 920" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Mapa de Argentina por provincias" data-i18n-attr="aria-label:presence.map">
               <path class="province" id="ARE" data-name="Entre Ríos" d="M607.1 332.7l-1.1 0.2-1.9 0.8-1 0-0.8-0.4-2.2-2-0.3-0.1-1-0.3-0.4-0.2-1.2-1-1.5-0.9-0.3-0.3-0.4-0.2-0.6-0.1-2.1 0-0.2 0-0.1-0.2-0.1-0.2-0.1-0.1-0.2-0.2-0.1-0.1-0.2 0-0.1 0.1-0.1 0-0.1 0.1-0.2-0.1-0.1-0.1-0.1-0.2-0.1 0-0.1-0.2 0-0.7 0-0.3-0.2-0.4-0.1 0-0.2 0-0.3 0.1-0.1 0-0.1 0.3-0.1 0-1.8 0-1-0.5-0.8-1-0.9-0.6-1.1 0.4-0.6 0.2-0.7-0.2-2.8-1.5-0.3-0.3-0.8-1.2-0.3-0.4-0.4-0.2-1-0.6-0.4 0-0.4-0.2-3.5-2.5-2.7-2.8-1-0.6-0.6-0.3-0.5-0.5-0.1-0.1-0.2-0.5-0.4-0.4-0.2-0.2-0.2-0.1-0.3-0.1-0.3-0.2-1.3-0.9-1.2-1.5-0.1-0.2-0.5-1.7-0.1-0.2-0.1-0.1-0.2-0.2-0.1 0-0.4-0.6-1.1-2.3-0.3-0.9-0.1-1-0.2-2.2-0.1-0.5-0.3-0.4-0.7-1.2-0.2-0.4 0-0.4 0.1-0.5 0.6-1.6 0.1-0.5 0.1-0.5-0.2-1.5 0.1-0.5 0.1-0.5 0.4-1.5 0.1-0.4 0-0.6-0.2-1.4 0.1-0.5 0.1-0.4 0.7-1.2 0.1-0.5-0.1-0.5-0.2-0.5-0.6-0.8-0.2-0.6-0.1-0.6 0-0.6 0.2-0.5 0.6-0.8 0.2-0.4 0-0.2 0.1-0.8 0.3-0.7 0-0.4 0-0.3 0-0.1 0.1 0-0.1-0.2 0-0.2 0-0.2 0.1-0.2 0.2-0.2 0.1 0 0.6-0.2 0.4 0 0.4 0 1.5 0 0.4-0.1 0.4-0.1 0.4-0.2 0.4-0.2 0.7-0.6 0.6-0.7 1.1-1.6 0.5-0.6 0.3-0.4 0.1-0.2 0.3-0.3 0.3-0.2 0.1 0 0.2-0.4 0.2-0.2 0.1-0.1 0.2-0.1 0.3-0.1 0.1 0 0.1-0.2 0.4-0.7 0.9-1.1 0.1-0.3 0.1 0 0.6-2.1 0.2-0.3 0.8-0.7 0.3-0.3 1.3-2.4 1.2-1.8 0.8-1.5 1-1.3 0.4-0.8 1.1-1.5 1.2-2.2 0.2-0.5 0.1-1.4 0.1-0.4 0.4-1.2 0-0.4 0-1.4 0.2-0.9 0-0.4-0.1-0.4-0.5-1.1-0.2-0.4-0.2-1.1 1.7-0.1 0.3 0 1.3-0.6 0.1 0 0.1 0 0.1 0 0.5 0.2 0.2 0 1.4-0.3 1.1 0.2 1.9 0.7 1.6-0.9 0.4-0.3 0.2-0.3 0.8-0.7 1.1-0.7 0.5-0.3 0.3-0.1 0.7 0.1 1.2 0.3 0.6 0.1 0.2 0 1.7-0.3 0.4-0.2 0.4-0.2 2.6-1.1 0.6 0 0.3 0 0.3 0.1 0.2 0.1 0.5 0.4 0.1 0.1 0.2 0.1 0.5 0 0.9 0 4 1.1 0.7 0.5 0.2 0.3 0 0.2 0.2 0.5 0.3 0.5 0.5 0.6 1.2 1.2 0.9 0.8 0.3 0.4 0.1 0.4 0.1 1.1 0.2 0.5 0.8 1.6 0.2 0.4 2.4 2.5 1.1 0.9 0.2 0 0.1 0.7 0.1 0.4 0.1 0.6 0 1 0 0.2-0.2 0.6-0.1 0.4-0.2 0.1-0.5-0.1-0.9 0.3-0.4 0.2-0.1 0.5 0.1 0.2 0.9 1.3 0.1 1.2-0.3 0.8-0.6 0.8-0.2 1.1 0.1 1 0 0.7-0.2 0.2-0.4 1-0.2 0.1-0.3 0.3-0.2 0.1-0.2 0.5-0.1 1.1-0.2 0.5-0.3 0.3-0.8 0.5-0.4 0.3-0.2 0.7 0.5 0.7 0.2 0.1 0.6 0.5 0.5 0.7 0.2 1-0.2 1.1-1.3 3.8-0.2 0.3-0.5 0.2-1 0.2-0.4 0.2-0.3 0.3-0.6 0.6-0.2 0.5 0.3 0.5 0.7 0.7 0.2 0.8 0 1.1 0 1.1-0.2 0.9-0.5 0.8-0.1 0.5 0.2 0.5 1.4 1.9 0.2 0.7-0.1 0.7-1.3 2-0.5 1-0.2 0.3 0 0.1 0-0.1-0.4 1.1-0.1 1.1 0.3 3 0.3 1.7 0.3 2.5 0.2 0.5 0.6 0.9 0.1 0.4-0.1 0.5-0.3 0.9-0.1 0.6 0.3 1.1 0 0.6-0.2 0.3-0.8 0.7-0.2 0-0.5 0.1-0.3 0-2.9-0.5-0.7 0.4-0.1 0.1-0.2 0.2 0 0.2 0.4 0.2 0 0.2-0.1 0.3 0 0.2-0.1 0.5-0.2 1.1 0 0.5 0.3 1.1 0.1 0.6-0.2 0.2-0.4 0.2-0.4 0.5-0.6 0.8-0.3 0.9-0.4 1.1-0.2 1.1-0.1 1 0.2 1.1-0.1 0.3-0.2 0.5-0.1 1.8 0 0.6 0.1 1 0.4 0.8 1.1 1.6 0.2 0.4 0.1 0.5 0.1 1.1 0.2 1.4 0 0.3-0.1 0.3 0 0.1z" />
               <path class="province" id="ARA" data-name="Salta" d="M398.9 121.6l0.1-0.1 0.4-0.2 0.3 0 0.4 0.1 0.4 0 0.5-0.1 0.4-0.2 0.2-0.3 0-0.5-0.4-0.6-0.7-0.6-0.5-0.6 0.1-0.9 0.1-0.2-0.1-0.2-0.1-0.1-0.1-0.2-0.1-0.1-0.2-0.2-0.1-0.1 0-0.1 0-0.1 0.1-0.1-0.2-0.3-0.1-0.2-0.2-0.1-0.4 0-0.2-0.1-0.5-0.3-0.2-0.2-0.1-0.2-0.4-1.2-0.1-0.4 0.2-0.5 1-2.1 0.3-0.8 0-0.3 0.1-0.4 0.2-0.2 0.2-0.1 0.4 0.6 0.3 0.1 0.1-0.4 0.2-0.7 0.8-1.8 0.4-0.2 0.3 0 0.4 0.2 0.4-0.1 0.2-0.2 0.8-1.3 0.2-0.6 0.1-0.2 0.4-0.2 0.7-0.3 1-0.5 1-0.4 1.1-0.4 1-0.5 2.6-1.1 2.6-1.2 2.6-1.2 2.6-1.1 0.2-0.1 0.4-0.2 0.4-0.1 0.2-0.1 0.8-0.3 1-0.6 0.5-0.7 0.4-1.5 0.7-2.2 0.7-2.3 0.5 0.5 0.2 0.1 0.1 0.1 0.6 0.2 0.1 0.1 0.1 0.1 0.4 0.6 0.1 0.1 0.1 0 0.3 0.1 0.1 0.1 0.5 0 0.2 0.1 0.1 0 0.2 0.1 0.1 0.2 0.6 0.7 0.9 0.9 0.1 0.1 0.1 0.4 0.1 0.2 0.1 0.1 0.1 0 0.2 0.1 0.2 0 0.1 0 0.1 0.1 0.1 0.2 0.1 0.3 0.1 0.1 0 0.1 0.7 0.7 0.4 0.6 0.2 0.2 0.3 0.2 1.7 0.7 0.1 0.1 0.8 0.8 0.7 1.1 0.5 0.4 0.6 0.4 0.8 0.4 0.8 0.2 1.3-0.1 0.7-0.4 1.1-1.5 0.1-0.1 0.4 0 0.1-0.2 0.2-0.3 0-0.7 0.2-0.4 0.1-0.3 0.2-0.2 0.1-0.3 0-0.7 0-0.9 0.2-2.3 0.1-2-0.1-1.3-0.1-0.7-0.7-1.5 0-0.3-0.5-1.3-0.1-0.2 0-0.7 0.1-0.6 0.5-2.3 0.1-0.1 0.1-0.2 0.1-0.1 0.1 0 0.2-0.1 0.2 0 0.2 0.1 1 0.5 0.5-0.1 0.6 0.5 0.4 0.2 0.2 0 0.3-0.1 0.1 0 0.1 0.1 0.1 0 3 1.8 0.6 0.6 0.1 0.2 0.1 0.2 0 0.1 0 0.3-0.1 0.8 0 0.4 0.1 1.1-0.2 0.5 0 0.2 0.2 0.4 0 0.2 0 0.1-0.4 0.3 0 0.1-0.2 0.5-0.1 0.1 0 0.2-0.1 1.6 0 0.1 0.1 0.1 0.1 0.1 0.1 0 0.1 0.1 0 0.4 0.1 0.1 0 0.1 0.1 0 0.1 0.1 0 0.1 0 0.2-0.2 0.2 0 0.2 0 0.3 0.4 0.5 0.2 0.3 0.2 0.3 0.1 0.1 0.1 0 0.2 0 0.1 0 0.1-0.1 0.1-0.1 0.1-0.1 0.1 0 0.1-0.1 0.1 0 0.2 0.1 0.2 0.1 0.2 0.1 0.8 0.8 0.2 0.3 0.1 0 1 0.5 0.4 0.4 0.1 0.8-0.1 0.9 0.2 0.5 0.7 1.2 2.1 2.8 0.4 0.8 0.2 0.4 0.1 0.1 0.2 0.1 0.7 0.4 0.2 0.1 0.2-0.1 0.2 0 0.2-0.2 0.1 0 0.1 0 0.1 0 0.1 0 0.2 0.1 0.2 0.1 0.5 0.5 0.2 0.2 0.5 0.1 0.5 0 0.1 0.1 0.3 0 0.9 0.5 0.8 0.2 0.5-0.1 0.3-0.1 0.5-0.3 0.8-0.6 0.1 0 0.1 0 0.1 0.1 0.1 0.2 0.1 0.2 0 0.1 0.1 0.1 1.7 1.4 0.7 0.5 2 0.7 0.3 0 0.1 0 0.1 0 0.1 0 0.1-0.1 0.9-2.3 0.3-0.5 0.3-0.3 0.3 0 3.9 3.6 0.2 0 0.1-0.1 0.2-0.1 0.1-0.2 0.1-0.3 0.2-0.5 0.2-0.5 0.3-0.3 1.2-1.1 1-0.2 0.1-0.1 0.1-0.1 0.3-0.5 0.1-0.1 0.1-0.1 0.2-0.1 0.2-0.1 0.4 0 0.1 0 0.1 0 0.3-0.1 0.4 0 0.1 0 0.1 0 0.2-0.1 0.1 0 0.3-0.3 0.6-0.6 1.2-1.7 0.7-1.3 0.3-1 0.1-0.3-0.5-14.6 0-0.3-0.1-0.3-0.4-0.1-0.3 0-2.6-0.1-0.2 0-0.2 0.1-0.2 0.3-0.4 0.4-0.1 0.2-0.2 1-0.1 0.2-0.5 0.4-0.5-0.4-0.2-0.2-0.1-0.1 0-0.1-0.5-0.5-0.3-0.6-0.1 0-0.4-0.4-0.3-0.3-0.7-0.3-0.8-0.2-0.2-0.1 0-0.1-0.1 0-0.2-0.3-0.2-0.1-0.1 0-0.3 0-0.4 0.1-0.9 0.1-0.1 0.1-0.2 0.1-0.4 0.4-0.1 0.1-0.1 0-0.1 0.1-0.1 0.1-0.4 0-0.6-0.1-0.3-0.1-0.2 0-0.1 0-0.1-0.1-0.1-0.3 0-0.7-0.1-0.2-0.1-0.2-0.7-1.4-0.2-0.7-0.4-0.6-0.2-0.2-0.7-0.4-0.1 0-0.5-0.1-0.1-0.1 0-0.1-0.1-0.1-0.1-0.1 0-0.1 0-0.1 0-0.3 0.1-0.3 0.3-1.4 0.3-2 0-0.6 0-0.1-0.1-0.2-0.1-0.2-0.1-0.2-0.4-0.3-0.2-0.2-0.1-0.1-0.6 0-1.7-0.1-0.3 0-0.2-0.1-0.5-0.4-0.2-0.3-0.1-0.1-0.1-0.2-0.4-1.5-0.1-0.2-0.2-0.3 0-0.1-0.3-2.1 0-0.1-0.1-0.3 0-0.2 0-0.6 0-0.3 0.1-0.4 0.4-0.6-0.1-0.2-0.7-0.7-0.2-0.1-0.3 0.1-0.2 0-0.1 0-0.1-0.2 0.2-1-0.1-0.5 0.1-0.2 0-0.2 0.5-0.9 0.1-0.4 0.1-0.3 0.6-1.4 0.2-0.3 0.1-0.1 0.3-0.6 0.1-0.1 0-0.2 0-1.3 0.1-0.7 0.2-0.9 0.1-0.3 0.2-0.4 0.3-0.4 0.1-0.3 0-0.5 3.5 0 3.9 0.9 1.5 0.8 0.8 0.2 0.2 0 0.4-0.2 0.1 0 0.2 0 0.4 0.1 0.4 0.3 0.5 0.2 0.4 0.1 0.2 0.2 0.6 0.6 0.1 0.3 0.2 0.5 0 0.3-0.1 0.3-0.3 0.4-0.2 0.5 0.3 0.4 0.4 0.3 0.3 0.2 0 0.3-0.1 0.4 0 0.2 0.1 0.2 0.4 0.2 0 0.2 0.2 0.5 0.3 0.4 1.1 1.1 0 0.4-0.2 0.2-0.2 0.2 0 0.3-0.1 0.2-0.1 0.4 0 0.3 0.1 0.3 0.1 0.1 0.2 0.1 0.2 0.2 0.5 1.2 0.3 0.1 0.4 0.3 0.3 0.5 0.1 0.6-0.2 0.5 0.3 0.3 0 1.1 0.4 0.1 0-0.2 0.5-1.8 0.2-0.4 0-1.6 0.9-3.4 0.3-0.5 1-1 0.5-0.8 1.6-4 0.1-0.2 0.5-0.2 0.1-0.3 0.7-1.6 0.3-1.3 0.2-0.3 0.1-0.1 0.1-0.1 0.2 0 0.1-0.2 0.1-0.2 0.1-0.4 0.2-0.5 0-0.1 0.1-0.1 0.3-0.1 0.5-0.2 1.9 0.2 0.5 0.2 0.8 0.7 0.2 0.1 1-0.8 0.3-0.2 0.8-0.1 6.6 0 6.5 0 3-0.1 0.9 0.1 0.3 0.1 0.1 0.2 0.1 0.9 0 0.2 0 0.2 0.1 0.2 0 0.7 0.2 0.4 0.3 0.3 0.9 0.5 0.9 0.7 0.3 0.2 0.1 0.2 0 0.2 0 0.2 0.2 0.1 0.2 0 0.2 0.1 0.2 0.1 0.1 0.2-0.2 0 0.1 0.3 0 0.2-0.2 0.2 0 0.2 0.1 0.2 0.3 0.2 0.3 0.1 0.2 0 0.5 0.1 0.4 0.3 0.5 0.7 0.2 0.1 0.8 0.3 0.2 0.1 0.2 0.3 0.3 0.4 1.5 1 0.4 0.2 0.1 0 0.1 24.4 0 12.8 0.1 6.4-15.7 20.5-6.4 8.2-10.9-0.2-0.7-0.2-4-1.3-0.8-0.1-0.4 0.5-4.4 9.8-0.1 0.4-0.1 0.2 0 0.8 0 0.2-0.2 0.4-0.7 1.5-0.1 0.1-0.1 0.8-4.4 0.1-0.3 0-1.1-0.3-0.7 0.1-1 0.4-0.2 0.1-0.4 0.4-0.4 0.3-0.1 0-0.2 0.1-0.3 0-0.1 0.1-0.3-0.1-0.4-0.1-0.7-0.3-0.4-0.3-0.4-0.1-0.2 0-0.3 0.1-4-1.6-0.3-0.2-0.1-0.3-0.2-0.3-0.1-0.6-0.3-0.6-0.1-0.1-0.1 0-0.1-0.1-0.2 0-0.2 0.1-0.6 0.2-1.1 0.6-0.1 0.1-0.1 0-0.3 0-2-0.5-0.3 0-0.5 0.1-1-0.3-0.1-0.1-0.5-0.2-0.1-0.1-0.1 0-0.2 0.1-0.1 0.1 0 0.1-0.1 0.3 0 0.3 0 0.9 0 0.5-0.2 0.4-0.1 0.5 0 0.3 0 0.8 0 0.2 0 0.1 0 0.1-0.1 0.2-0.1 0.1-0.1 0.1-0.1 0.1-0.2 0.1-0.7-0.1-6.1-1-0.8-0.5-0.6-0.6-0.4-0.7-0.3-0.2-0.4-0.1-0.3 0-0.4 0-0.3 0.2-0.2 0.1-0.2 0.3-0.4 0.7-0.6 0.4-0.2 0.2-0.2 0.4-1 2.4-0.1 0.1-0.1 0.1-0.2 0.2-0.1 0.1-0.2 0-0.1 0-0.1-0.1-0.2 0-0.1-0.2-0.7-0.6-1.3-1.6-0.4-0.5-0.8-1.9-0.5-0.6-0.2-0.2-0.3-1-1.7-2.2-1.6-2.5-0.5-0.8-0.3-1.1 0-0.9 0.1-0.6 0-0.2 0.1-0.2 0-0.1 0.2-0.2 0.2-0.1 0.1-0.1 0.3-0.2 0.4-0.4 0.1-0.1 0.1 0 0.1-0.1 1.4 0 0.8-0.1 0.9 0 0.2 0 0.1 0 0.2-0.1 1-0.8 0.3-0.3 0.1-0.2 0-0.1 0-0.2 0-0.2 0-0.2 0.5-1.8 0-0.3 0-0.1 0-0.2-0.1-0.2-0.2-0.3-0.4-0.5-0.3-0.4 0-0.1-0.1-0.3 0-0.1-0.2-1.7-0.1-0.2-0.2-0.5-0.1-0.1-0.1-0.1-0.1-0.1-0.1 0-0.7-0.1-25 0.4-14-2.8-0.3-0.1z" />
               <path class="province" id="ARY" data-name="Jujuy" d="M467.4 52.4l0 0.5-0.1 0.3-0.3 0.4-0.2 0.4-0.1 0.3-0.2 0.9-0.1 0.7 0 1.3 0 0.2-0.1 0.1-0.3 0.6-0.1 0.1-0.2 0.3-0.6 1.4-0.1 0.3-0.1 0.4-0.5 0.9 0 0.2-0.1 0.2 0.1 0.5-0.2 1 0.1 0.2 0.1 0 0.2 0 0.3-0.1 0.2 0.1 0.7 0.7 0.1 0.2-0.4 0.6-0.1 0.4 0 0.3 0 0.6 0 0.2 0.1 0.3 0 0.1 0.3 2.1 0 0.1 0.2 0.3 0.1 0.2 0.4 1.5 0.1 0.2 0.1 0.1 0.2 0.3 0.5 0.4 0.2 0.1 0.3 0 1.7 0.1 0.6 0 0.1 0.1 0.2 0.2 0.4 0.3 0.1 0.2 0.1 0.2 0.1 0.2 0 0.1 0 0.6-0.3 2-0.3 1.4-0.1 0.3 0 0.3 0 0.1 0 0.1 0.1 0.1 0.1 0.1 0 0.1 0.1 0.1 0.5 0.1 0.1 0 0.7 0.4 0.2 0.2 0.4 0.6 0.2 0.7 0.7 1.4 0.1 0.2 0.1 0.2 0 0.7 0.1 0.3 0.1 0.1 0.1 0 0.2 0 0.3 0.1 0.6 0.1 0.4 0 0.1-0.1 0.1-0.1 0.1 0 0.1-0.1 0.4-0.4 0.2-0.1 0.1-0.1 0.9-0.1 0.4-0.1 0.3 0 0.1 0 0.2 0.1 0.2 0.3 0.1 0 0 0.1 0.2 0.1 0.8 0.2 0.7 0.3 0.3 0.3 0.4 0.4 0.1 0 0.3 0.6 0.5 0.5 0 0.1 0.1 0.1 0.2 0.2 0.5 0.4 0.5-0.4 0.1-0.2 0.2-1 0.1-0.2 0.4-0.4 0.2-0.3 0.2-0.1 0.2 0 2.6 0.1 0.3 0 0.4 0.1 0.1 0.3 0 0.3 0.5 14.6-0.1 0.3-0.3 1-0.7 1.3-1.2 1.7-0.6 0.6-0.3 0.3-0.1 0-0.2 0.1-0.1 0-0.1 0-0.4 0-0.3 0.1-0.1 0-0.1 0-0.4 0-0.2 0.1-0.2 0.1-0.1 0.1-0.1 0.1-0.3 0.5-0.1 0.1-0.1 0.1-1 0.2-1.2 1.1-0.3 0.3-0.2 0.5-0.2 0.5-0.1 0.3-0.1 0.2-0.2 0.1-0.1 0.1-0.2 0-3.9-3.6-0.3 0-0.3 0.3-0.3 0.5-0.9 2.3-0.1 0.1-0.1 0-0.1 0-0.1 0-0.3 0-2-0.7-0.7-0.5-1.7-1.4-0.1-0.1 0-0.1-0.1-0.2-0.1-0.2-0.1-0.1-0.1 0-0.1 0-0.8 0.6-0.5 0.3-0.3 0.1-0.5 0.1-0.8-0.2-0.9-0.5-0.3 0-0.1-0.1-0.5 0-0.5-0.1-0.2-0.2-0.5-0.5-0.2-0.1-0.2-0.1-0.1 0-0.1 0-0.1 0-0.1 0-0.2 0.2-0.2 0-0.2 0.1-0.2-0.1-0.7-0.4-0.2-0.1-0.1-0.1-0.2-0.4-0.4-0.8-2.1-2.8-0.7-1.2-0.2-0.5 0.1-0.9-0.1-0.8-0.4-0.4-1-0.5-0.1 0-0.2-0.3-0.8-0.8-0.2-0.1-0.2-0.1-0.2-0.1-0.1 0-0.1 0.1-0.1 0-0.1 0.1-0.1 0.1-0.1 0.1-0.1 0-0.2 0-0.1 0-0.1-0.1-0.2-0.3-0.2-0.3-0.4-0.5 0-0.3 0-0.2 0.2-0.2 0-0.2 0-0.1-0.1-0.1-0.1 0 0-0.1-0.1-0.1 0-0.4-0.1-0.1-0.1 0-0.1-0.1-0.1-0.1 0-0.1 0.1-1.6 0-0.2 0.1-0.1 0.2-0.5 0-0.1 0.4-0.3 0-0.1 0-0.2-0.2-0.4 0-0.2 0.2-0.5-0.1-1.1 0-0.4 0.1-0.8 0-0.3 0-0.1-0.1-0.2-0.1-0.2-0.6-0.6-3-1.8-0.1 0-0.1-0.1-0.1 0-0.3 0.1-0.2 0-0.4-0.2-0.6-0.5-0.5 0.1-1-0.5-0.2-0.1-0.2 0-0.2 0.1-0.1 0-0.1 0.1-0.1 0.2-0.1 0.1-0.5 2.3-0.1 0.6 0 0.7 0.1 0.2 0.5 1.3 0 0.3 0.7 1.5 0.1 0.7 0.1 1.3-0.1 2-0.2 2.3 0 0.9 0 0.7-0.1 0.3-0.2 0.2-0.1 0.3-0.2 0.4 0 0.7-0.2 0.3-0.1 0.2-0.4 0-0.1 0.1-1.1 1.5-0.7 0.4-1.3 0.1-0.8-0.2-0.8-0.4-0.6-0.4-0.5-0.4-0.7-1.1-0.8-0.8-0.1-0.1-1.7-0.7-0.3-0.2-0.2-0.2-0.4-0.6-0.7-0.7 0-0.1-0.1-0.1-0.1-0.3-0.1-0.2-0.1-0.1-0.1 0-0.2 0-0.2-0.1-0.1 0-0.1-0.1-0.1-0.2-0.1-0.4-0.1-0.1-0.9-0.9-0.6-0.7-0.1-0.2-0.2-0.1-0.1 0-0.2-0.1-0.5 0-0.1-0.1-0.3-0.1-0.1 0-0.1-0.1-0.4-0.6-0.1-0.1-0.1-0.1-0.6-0.2-0.1-0.1-0.2-0.1-0.5-0.5 0.1-0.3 1.5-4.8 1.4-4.8 1.5-4.7 0.3-1.3 0.1-0.7-3.7-4 1.1-1.8 0.6-0.7 1.6-1.2 0.2-0.4 0-0.5-0.1-2 0.3-0.1 0.5 0.1 0.3-0.1 0.3-0.2 0.2-0.3 0.4-0.4 0.5-0.3 2.3-0.8 0.3-0.1 0-0.3-0.1-0.6 0-0.2 0.3-0.3 0.1-0.5 0.3-1.7 0.1-0.5 0.3-0.5 0.5-0.4 0.3-0.1 0.2 0 0.2 0.1 0.4 0 0.4 0.2 0.1-0.1 0-0.1 0.1-0.2 0.1-0.1 2.4-0.6 2.7-0.8 0.5-0.4 0.1-0.3 0.1-0.2 0.2-0.2 0.2-0.1 0.2 0 0.1 0.1 0.1-0.1 0.1-0.2 0.1-0.4 0.2-2.1 1-3.6 0.3-0.1 1.8 0.5 0.9 0.5 0.6 0.7 0.3 1.1 0.1 0.1 1.9 0.3 0.4 0.3 2.7 3.1 0.6 0.5 0.6 0.2 2.9-0.4 0.2-0.1 0.1-0.1 0.1 0 0.1-0.1 1.5 0.3 1.1 0.1 5.5-0.1z" />
@@ -718,7 +718,7 @@
               </g>
             </svg>
             <div class="arg-tooltip" hidden></div>
-            <a class="arg-credit" href="https://simplemaps.com" target="_blank" rel="noopener">Mapa: simplemaps.com</a>
+            <a class="arg-credit" href="https://simplemaps.com" target="_blank" rel="noopener" data-i18n="presence.credit">Mapa: simplemaps.com</a>
           </div>
         </div>
       </div>
@@ -726,6 +726,132 @@
 
   </div>
 
+<script>
+// Traducciones: el español es el texto del HTML; acá van inglés y portugués
+window.I18N = {
+  es: {
+    'map.presence': 'Presencia Parral y Tiempo',
+    'map.soon': 'Próximamente',
+    'map.vineyards': 'Viñedos Parral y Tiempo',
+    'wa.msg': '¡Hola Parral y Tiempo Wines! Vi su página web y me gustaría recibir información sobre sus vinos.'
+  },
+  en: {
+    'nav.story': 'Origin of Parral y Tiempo',
+    'nav.origin': 'Origin',
+    'nav.wines': 'Wine collection',
+    'nav.contact': 'Coverage and contact',
+    'intro.eyebrow': 'Boutique Project',
+    'intro.sub': 'The perfect moment starts here. <br>Swipe to get to know us.',
+    'intro.scroll': 'Horizontal Scroll',
+    'intro.swipe': 'Swipe',
+    'story.eyebrow': 'Our story',
+    'story.title': 'From the office to the vineyard: the origin of <em>Parral y Tiempo</em>',
+    'story.text1': 'Every great project starts with a simple conversation and a bit of boldness. Ours began within the walls of a warehouse where we shared an office. Every day, over mate, the conversation was always the same: what the wines we dreamed of making would be like if the project were truly ours.',
+    'story.text2': 'Working for established wineries gave us the training, but the desire to create something genuine and our own gave us the drive. That is how <strong>Parral y Tiempo</strong> was born. Like a good wine that asks for time and shade, this project was built without shortcuts: we are two friends sharing the road, caring for every detail side by side and pushing with conviction toward the same horizon.',
+    'story.manifesto.title': 'Thirst-Quenching Wines',
+    'story.manifesto.body': 'Wines made to be enjoyed without solemnity or heavy labels. Lively, fresh, light and highly aromatic, the kind that make you reach for a second glass right away. We are passionate about drinkability, clean fruit and flow.',
+    'story.pillar1': 'Passion',
+    'story.pillar2': 'Commitment',
+    'story.pillar3': 'Friendship',
+    'origin.eyebrow': 'Origin · Terroir',
+    'origin.title': 'The identity of <em>our land</em> in every sip',
+    'origin.lead': 'Forged in the heart of eastern Mendoza, this wine is born from a unique terroir, shaped by generous sunshine, deep soils and the constant breeze that sweeps across our plains. Here, the land of Mendoza shows its freest and most authentic side. Far from heavy structures, we use this landscape to craft light, sharp wines of endless freshness: direct, vibrant and honest sips, made to be enjoyed without fuss.',
+    'origin.region': 'Region',
+    'origin.soil': 'Soil',
+    'origin.climate': 'Climate',
+    'origin.region.value': 'Eastern Mendoza',
+    'origin.soil.value': 'Sandy loam <br> Alluvial plain',
+    'origin.climate.value': 'Temperate continental<br>High sun exposure and wide thermal range',
+    'origin.map': 'Map of Mendoza by department',
+    'hanami.eyebrow': '01 · Contemplating the Cherry Blossom',
+    'hanami.tagline': 'Rebirth',
+    'hanami.text': 'Beneath that <em>sakura</em> a reflection on life takes root: nature shows us that rebirth is always possible, even after the harshest seasons. And when the cycle is complete, we await death not as an end, but as a return to an eternal sense of belonging.',
+    'ieneko.eyebrow': '02 · The Night Feline',
+    'ieneko.tagline': 'Young spirit',
+    'ieneko.text': 'When the light fades and darkness surrounds us, only our instincts can guide us toward what lives within. Like the <em>neko</em> resting on the rooftop: serene, unafraid of the unknown and captivated by the mystery of what is yet to be discovered.',
+    'ieneko.origin.value': 'Eastern Mendoza - Tupungato',
+    'origami.eyebrow': '03 · The Art of Folding',
+    'origami.tagline': 'Precision, paper and freshness',
+    'origami.text': 'A second origami figure joins the line drawing, and the shadows beneath each fold open up a <em>three-dimensional perspective</em>. It creates a feeling of movement and freedom.',
+    'origami.origin.value': 'Eastern Mendoza',
+    'wine.variety': 'Variety',
+    'wine.origin': 'Origin',
+    'wine.training': 'Training',
+    'wine.training.value': 'Traditional pergola',
+    'wine.sheet': 'View Tech Sheet',
+    'wine.tabs': 'Wine selection',
+    'presence.eyebrow': 'Nationwide Coverage · Sales Network',
+    'presence.title': 'Spreading our <em>spirit</em> across Argentina',
+    'presence.lead': 'Our thirst-quenching wines travel across the country to meet wine lovers in its most iconic places. We are currently present in key provinces.',
+    'presence.contact': 'Sales & Distribution Contact',
+    'presence.map': 'Map of Argentina by province',
+    'presence.credit': 'Map: simplemaps.com',
+    'wa.title': 'Message us on WhatsApp',
+    'wa.msg': 'Hi Parral y Tiempo Wines! I saw your website and I would like to receive information about your wines.',
+    'map.presence': 'Parral y Tiempo presence',
+    'map.soon': 'Coming soon',
+    'map.vineyards': 'Parral y Tiempo vineyards'
+  },
+  pt: {
+    'nav.story': 'Origem da Parral y Tiempo',
+    'nav.origin': 'Origem',
+    'nav.wines': 'Coleção de vinhos',
+    'nav.contact': 'Cobertura e contato',
+    'intro.eyebrow': 'Projeto Boutique',
+    'intro.sub': 'O momento perfeito começa aqui. <br>Deslize para nos conhecer.',
+    'intro.scroll': 'Rolagem Horizontal',
+    'intro.swipe': 'Deslize',
+    'story.eyebrow': 'Nossa história',
+    'story.title': 'Do escritório ao vinhedo: a origem da <em>Parral y Tiempo</em>',
+    'story.text1': 'Todo grande projeto começa com uma conversa simples e um pouco de ousadia. A nossa começou entre as paredes de um depósito onde dividíamos o escritório. Todos os dias, com um mate no meio, a conversa era sempre a mesma: como seriam os vinhos que sonhávamos fazer se o projeto fosse verdadeiramente nosso.',
+    'story.text2': 'Trabalhar para projetos consagrados nos deu a escola, mas a vontade de criar algo próprio e genuíno nos deu o impulso. Assim nasceu a <strong>Parral y Tiempo</strong>. Como o bom vinho que pede tempo e sombra, este projeto foi construído sem atalhos: somos dois amigos dividindo o caminho, cuidando de cada detalhe lado a lado e avançando com convicção rumo ao mesmo horizonte.',
+    'story.manifesto.title': 'Vinhos de Sede',
+    'story.manifesto.body': 'Vinhos pensados para serem bebidos sem solenidade nem rótulos pesados. Ágeis, frescos, leves e super aromáticos, daqueles que convidam a buscar logo a segunda taça. Somos apaixonados pela bebibilidade, pela fruta limpa e pela fluidez.',
+    'story.pillar1': 'Paixão',
+    'story.pillar2': 'Compromisso',
+    'story.pillar3': 'Amizade',
+    'origin.eyebrow': 'Origem · Terroir',
+    'origin.title': 'A identidade da <em>nossa terra</em> em cada gole',
+    'origin.lead': 'Forjado no coração do leste de Mendoza, este vinho nasce de um terroir único, marcado pela generosidade do sol, solos profundos e a brisa constante que abraça a nossa planície. Aqui, a terra mendocina expressa a sua versão mais livre e autêntica. Longe das estruturas pesadas, aproveitamos esta paisagem para criar vinhos leves, afiados e de um frescor inesgotável: goles diretos, vibrantes e honestos, pensados para desfrutar sem rodeios.',
+    'origin.region': 'Região',
+    'origin.soil': 'Solo',
+    'origin.climate': 'Clima',
+    'origin.region.value': 'Leste de Mendoza',
+    'origin.soil.value': 'Franco-arenoso <br> Aluvial de planície',
+    'origin.climate.value': 'Continental temperado<br>Grande insolação e amplitude térmica',
+    'origin.map': 'Mapa de Mendoza por departamentos',
+    'hanami.eyebrow': '01 · A Contemplação da Cerejeira',
+    'hanami.tagline': 'O renascer',
+    'hanami.text': 'Sob aquela <em>sakura</em> germina uma reflexão sobre a vida: a natureza nos revela que sempre é possível renascer, mesmo depois das estações mais ásperas. E quando o ciclo se cumpre, aguardamos a morte não como fim, mas como o retorno a um sentido eterno de pertencimento.',
+    'ieneko.eyebrow': '02 · O Felino Noturno',
+    'ieneko.tagline': 'Espírito jovem',
+    'ieneko.text': 'Quando a luz se apaga e a escuridão nos envolve, só os nossos instintos podem nos guiar até aquilo que habita em nosso interior. Como o <em>neko</em> que descansa sobre o telhado: sereno, sem medo do desconhecido e cativado pelo mistério do que ainda resta descobrir.',
+    'ieneko.origin.value': 'Leste de Mendoza - Tupungato',
+    'origami.eyebrow': '03 · A Arte da Dobra',
+    'origami.tagline': 'Precisão, papel e frescor',
+    'origami.text': 'Uma segunda figura de origami se soma ao traço linear, e as sombras sob cada dobra abrem uma <em>perspectiva tridimensional</em>. Gera uma sensação de movimento e liberdade.',
+    'origami.origin.value': 'Leste de Mendoza',
+    'wine.variety': 'Variedade',
+    'wine.origin': 'Origem',
+    'wine.training': 'Condução',
+    'wine.training.value': 'Latada tradicional',
+    'wine.sheet': 'Ver Ficha Técnica',
+    'wine.tabs': 'Seleção de vinhos',
+    'presence.eyebrow': 'Cobertura Nacional · Rede Comercial',
+    'presence.title': 'Expandindo o nosso <em>espírito</em> pela Argentina',
+    'presence.lead': 'Os nossos vinhos de sede atravessam o país para encontrar os amantes do vinho nos lugares mais representativos. Atualmente estamos presentes em províncias estratégicas.',
+    'presence.contact': 'Contato Comercial & Distribuição',
+    'presence.map': 'Mapa da Argentina por províncias',
+    'presence.credit': 'Mapa: simplemaps.com',
+    'wa.title': 'Fale conosco pelo WhatsApp',
+    'wa.msg': 'Olá Parral y Tiempo Wines! Vi o site de vocês e gostaria de receber informações sobre os seus vinhos.',
+    'map.presence': 'Presença Parral y Tiempo',
+    'map.soon': 'Em breve',
+    'map.vineyards': 'Vinhedos Parral y Tiempo'
+  }
+};
+</script>
+<script src="assets/js/lang.js"></script>
 <script>
 (() => {
   const scenes = document.querySelectorAll('.scene');
@@ -742,7 +868,8 @@
 
   const goTo = (i) => {
     i = Math.max(0, Math.min(total - 1, i));
-    if (isMobile() || i === index || locked) return;
+    // con el pop-up de idioma abierto no se navega
+    if (isMobile() || i === index || locked || document.documentElement.classList.contains('lang-open')) return;
     locked = true;
     const prev = index;
     index = i;
@@ -868,6 +995,7 @@
     reset();
   });
   // Mapas interactivos (Argentina en la vista 5, Mendoza en la vista Origen)
+  // onLabel / offLabel son claves de traducción
   const initMap = (box, { tags = [], front = null, onLabel, offLabel }) => {
     if (!box) return;
     const tip = box.querySelector('.arg-tooltip');
@@ -883,7 +1011,7 @@
     };
     const showTip = (p, [x, y]) => {
       const on = p.classList.contains('province--active');
-      const sub = on ? onLabel : offLabel;
+      const sub = (on ? onLabel : offLabel) && t(on ? onLabel : offLabel);
       tip.innerHTML = p.dataset.name + (sub ? '<small class="' + (on ? '' : 'is-off') + '">' + sub + '</small>' : '');
       tip.style.left = x + 'px';
       tip.style.top = y + 'px';
@@ -921,10 +1049,21 @@
   initMap(argBox, {
     tags: document.querySelectorAll('.province-tag[data-province]'),
     front: argBox && argBox.querySelector('.arg-pins'),
-    onLabel: 'Presencia Tandem', offLabel: 'Próximamente'
+    onLabel: 'map.presence', offLabel: 'map.soon'
   });
   const mzaBox = document.querySelector('.map');
-  initMap(mzaBox, { front: mzaBox && mzaBox.querySelector('.arg-pins'), onLabel: 'Viñedos Tandem' });
+  initMap(mzaBox, { front: mzaBox && mzaBox.querySelector('.arg-pins'), onLabel: 'map.vineyards' });
+
+  // mensaje predeterminado de WhatsApp en el idioma elegido
+  const updateWhatsApp = () => {
+    document.querySelectorAll('a[href^="https://wa.me/"]').forEach(a => {
+      const url = new URL(a.href);
+      url.searchParams.set('text', t('wa.msg'));
+      a.href = url.toString().replace(/\+/g, '%20');
+    });
+  };
+  updateWhatsApp();
+  window.addEventListener('langchange', updateWhatsApp);
 
   // Ajuste a pantallas bajas (notebooks 720/768): si el contenido de una vista
   // no entra en el alto de la pantalla, se achica proporcionalmente.
@@ -951,6 +1090,8 @@
     };
     fit();
     window.addEventListener('resize', fit);
+    // los textos traducidos pueden ocupar más o menos lugar
+    window.addEventListener('langchange', fit);
     window.addEventListener('load', fit);
   })();
 

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ieneko · Ficha Técnica</title>
+  <title data-i18n="title.full">Ieneko · Ficha Técnica</title>
   <link rel="icon" type="image/png" href="../assets/img/logo-link.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -26,6 +26,7 @@
     .topbar { position: absolute; top: 0; left: 0; right: 0; z-index: 10; display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 2rem; }
     .back { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; text-decoration: none; color: var(--text-2); transition: color 0.3s ease; }
     .back:hover { color: var(--accent); }
+    .topbar-right { display: flex; align-items: center; gap: 1rem; }
     .brand-logo { height: 54px; width: auto; filter: grayscale(100%) brightness(2.2) contrast(1.1); opacity: 0.85; }
 
     /* HERO */
@@ -117,19 +118,20 @@
 <body>
 
   <header class="topbar">
-    <a class="back" href="../index.html">&larr; Volver</a>
+    <a class="back" href="../index.html" data-i18n="back">&larr; Volver</a>
+    <div class="topbar-right" data-lang-slot></div>
   </header>
 
   <section class="hero">
     <span class="hero-kanji" aria-hidden="true">猫</span>
     <div class="hero-inner">
       <div class="hero-text">
-        <p class="hero-eyebrow">02 · El Felino Nocturno</p>
+        <p class="hero-eyebrow">02 · <span data-i18n="ieneko.subtitle">El Felino Nocturno</span></p>
         <h1 class="hero-logo">Ieneko</h1>
-        <p class="hero-variety">60% Bonarda · 40% Cereza · Espíritu joven</p>
-        <p class="hero-desc">El gato contemplando la noche bajo la luna creciente: un vino joven, accesible y poético.</p>
-        <p class="hero-sub">Este Mendocino &nbsp;·&nbsp; El Zampal, Tupungato &nbsp;·&nbsp; Mendoza</p>
-        <span class="hero-badge">Ficha Técnica</span>
+        <p class="hero-variety">60% Bonarda · 40% Cereza · <span data-i18n="ieneko.tagline">Espíritu joven</span></p>
+        <p class="hero-desc"><span data-i18n="ieneko.description">El gato contemplando la noche bajo la luna creciente: un vino joven, accesible y poético.</span></p>
+        <p class="hero-sub"><span data-i18n="ieneko.place">Este Mendocino &nbsp;·&nbsp; El Zampal, Tupungato &nbsp;·&nbsp; Mendoza</span></p>
+        <span class="hero-badge" data-i18n="badge">Ficha Técnica</span>
       </div>
       <div class="bottle-wrap">
         <img class="bottle-img" src="../assets/img/botellas/botella-ieneko.png" alt="Botella Ieneko">
@@ -138,49 +140,49 @@
   </section>
 
   <div class="band">
-    <p class="band-text">60% Bonarda · 40% Cereza &nbsp;·&nbsp; Este Mendocino y El Zampal &nbsp;·&nbsp; 900 m.s.n.m</p>
+    <p class="band-text"><span data-i18n="ieneko.band">60% Bonarda · 40% Cereza &nbsp;·&nbsp; Este Mendocino y El Zampal &nbsp;·&nbsp; 900 m.s.n.m</span></p>
   </div>
 
   <main class="content">
 
     <div class="block">
-      <p class="block-label">Viñedo</p>
-      <h2 class="block-title">Origen e Identidad</h2>
+      <p class="block-label" data-i18n="vineyard.label">Viñedo</p>
+      <h2 class="block-title" data-i18n="vineyard.title">Origen e Identidad</h2>
       <div class="vineyard-grid">
-        <div class="card vy-card"><p class="vy-key">Variedad</p><p class="vy-val">60% Bonarda · 40% Cereza</p></div>
-        <div class="card vy-card"><p class="vy-key">Origen Bonarda</p><p class="vy-val">Este Mendocino (Rivadavia, San Martín)</p></div>
-        <div class="card vy-card"><p class="vy-key">Origen Cereza</p><p class="vy-val">El Zampal, Tupungato</p></div>
-        <div class="card vy-card"><p class="vy-key">Conducción</p><p class="vy-val">Parral tradicional</p></div>
-        <div class="card vy-card"><p class="vy-key">Suelo</p><p class="vy-val">Franco-arenoso / Arenoso poco profundo</p></div>
-        <div class="card vy-card"><p class="vy-key">Altura</p><p class="vy-val">900 m.s.n.m</p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="ieneko.vineyard.0.0">Variedad</span></p><p class="vy-val">60% Bonarda · 40% Cereza</p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="ieneko.vineyard.1.0">Origen Bonarda</span></p><p class="vy-val"><span data-i18n="ieneko.vineyard.1.1">Este Mendocino (Rivadavia, San Martín)</span></p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="ieneko.vineyard.2.0">Origen Cereza</span></p><p class="vy-val">El Zampal, Tupungato</p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="ieneko.vineyard.3.0">Conducción</span></p><p class="vy-val"><span data-i18n="ieneko.vineyard.3.1">Parral tradicional</span></p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="ieneko.vineyard.4.0">Suelo</span></p><p class="vy-val"><span data-i18n="ieneko.vineyard.4.1">Franco-arenoso / Arenoso poco profundo</span></p></div>
+        <div class="card vy-card"><p class="vy-key"><span data-i18n="ieneko.vineyard.5.0">Altura</span></p><p class="vy-val"><span data-i18n="ieneko.vineyard.5.1">900 m.s.n.m</span></p></div>
       </div>
     </div>
 
     <div class="divider"></div>
 
     <div class="block">
-      <p class="block-label">Elaboración</p>
-      <h2 class="block-title">Proceso</h2>
+      <p class="block-label" data-i18n="process.label">Elaboración</p>
+      <h2 class="block-title" data-i18n="process.title">Proceso</h2>
       <div class="elab-list">
         <div class="card elab-item">
           <span class="elab-num">1</span>
           <div>
-            <p class="elab-key">Molienda</p>
-            <p class="elab-text">Molienda y despalillado delicado de las dos variedades por separado, con el fin de preservar la integridad de la baya y su frescura natural.</p>
+            <p class="elab-key"><span data-i18n="ieneko.process.0.0">Molienda</span></p>
+            <p class="elab-text"><span data-i18n="ieneko.process.0.1">Molienda y despalillado delicado de las dos variedades por separado, con el fin de preservar la integridad de la baya y su frescura natural.</span></p>
           </div>
         </div>
         <div class="card elab-item">
           <span class="elab-num">2</span>
           <div>
-            <p class="elab-key">Fermentación</p>
-            <p class="elab-text">Fermentación con pieles de las dos variedades por separado, a temperatura promedio de 20 °C y con levaduras nativas. Durante la fermentación realizamos una homogeneización suave de los mostos con sus pieles, logrando aromas y estructuras delicadas.</p>
+            <p class="elab-key"><span data-i18n="ieneko.process.1.0">Fermentación</span></p>
+            <p class="elab-text"><span data-i18n="ieneko.process.1.1">Fermentación con pieles de las dos variedades por separado, a temperatura promedio de 20 °C y con levaduras nativas. Durante la fermentación realizamos una homogeneización suave de los mostos con sus pieles, logrando aromas y estructuras delicadas.</span></p>
           </div>
         </div>
         <div class="card elab-item">
           <span class="elab-num">3</span>
           <div>
-            <p class="elab-key">Guarda</p>
-            <p class="elab-text">El Cereza se almacena en piletas de mampostería; la Bonarda, una parte en piletas de mampostería y el resto en barricas de tercer uso.</p>
+            <p class="elab-key"><span data-i18n="ieneko.process.2.0">Guarda</span></p>
+            <p class="elab-text"><span data-i18n="ieneko.process.2.1">El Cereza se almacena en piletas de mampostería; la Bonarda, una parte en piletas de mampostería y el resto en barricas de tercer uso.</span></p>
           </div>
         </div>
       </div>
@@ -189,19 +191,19 @@
     <div class="divider"></div>
 
     <div class="block">
-      <p class="block-label">Procedencia</p>
-      <h2 class="block-title">Dos orígenes, un vino</h2>
+      <p class="block-label" data-i18n="map.label">Procedencia</p>
+      <h2 class="block-title"><span data-i18n="ieneko.map_heading">Dos orígenes, un vino</span></h2>
       <div class="card map-section">
         <div class="map-tabs" role="tablist">
-          <button class="map-tab is-active" role="tab" aria-selected="true" aria-controls="map-0">60% Bonarda · Este</button>
+          <button class="map-tab is-active" role="tab" aria-selected="true" aria-controls="map-0"><span data-i18n="ieneko.maps.0.label">60% Bonarda · Este</span></button>
           <button class="map-tab" role="tab" aria-selected="false" aria-controls="map-1">40% Cereza · El Zampal</button>
         </div>
         <div class="map-panel" id="map-0">
           <div class="map-header">
-            <p class="map-text">Nacido en la llanura del este mendocino, entre Rivadavia y San Martín: sol generoso, suelos profundos y una brisa constante.</p>
+            <p class="map-text"><span data-i18n="ieneko.maps.0.text">Nacido en la llanura del este mendocino, entre Rivadavia y San Martín: sol generoso, suelos profundos y una brisa constante.</span></p>
             <a class="map-open" href="https://www.google.com/maps/search/?api=1&amp;query=Rivadavia%2C+Mendoza%2C+Argentina" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              Abrir en Google Maps
+              <span data-i18n="map.open">Abrir en Google Maps</span>
             </a>
           </div>
           <div class="map-frame-wrap">
@@ -211,7 +213,7 @@
               allowfullscreen
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Mapa 60% Bonarda · Este, Mendoza">
+              title="Google Maps">
             </iframe>
           </div>
           <div class="map-breadcrumb">
@@ -219,17 +221,17 @@
             <span class="bc-arrow">&rarr;</span>
             <span class="bc-pill">Mendoza</span>
             <span class="bc-arrow">&rarr;</span>
-            <span class="bc-pill">Este Mendocino</span>
+            <span class="bc-pill"><span data-i18n="ieneko.maps.0.breadcrumb.2">Este Mendocino</span></span>
             <span class="bc-arrow">&rarr;</span>
             <span class="bc-pill">Rivadavia · San Martín</span>
           </div>
         </div>
         <div class="map-panel" id="map-1" hidden>
           <div class="map-header">
-            <p class="map-text">Ubicado en el corazón del Valle de Uco, El Zampal se encuentra a 950 m.s.n.m en el departamento de Tupungato, Mendoza.</p>
+            <p class="map-text"><span data-i18n="ieneko.maps.1.text">Ubicado en el corazón del Valle de Uco, El Zampal se encuentra a 950 m.s.n.m en el departamento de Tupungato, Mendoza.</span></p>
             <a class="map-open" href="https://www.google.com/maps/search/?api=1&amp;query=El+Zampal%2C+Tupungato%2C+Mendoza%2C+Argentina" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-              Abrir en Google Maps
+              <span data-i18n="map.open">Abrir en Google Maps</span>
             </a>
           </div>
           <div class="map-frame-wrap">
@@ -239,7 +241,7 @@
               allowfullscreen
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
-              title="Mapa 40% Cereza · El Zampal, Mendoza">
+              title="Google Maps">
             </iframe>
           </div>
           <div class="map-breadcrumb">
@@ -247,7 +249,7 @@
             <span class="bc-arrow">&rarr;</span>
             <span class="bc-pill">Mendoza</span>
             <span class="bc-arrow">&rarr;</span>
-            <span class="bc-pill">Valle de Uco</span>
+            <span class="bc-pill"><span data-i18n="ieneko.maps.1.breadcrumb.2">Valle de Uco</span></span>
             <span class="bc-arrow">&rarr;</span>
             <span class="bc-pill">El Zampal</span>
           </div>
@@ -279,6 +281,90 @@
       });
     });
   </script>
+
+  <script>
+    window.I18N = {
+      "en": {
+        "title": "Tech Sheet",
+        "back": "&larr; Back",
+        "badge": "Tech Sheet",
+        "vineyard.label": "Vineyard",
+        "vineyard.title": "Origin and Identity",
+        "process.label": "Winemaking",
+        "process.title": "Process",
+        "map.label": "Provenance",
+        "map.open": "Open in Google Maps",
+        "title.full": "Ieneko · Tech Sheet",
+        "ieneko.subtitle": "The Night Feline",
+        "ieneko.tagline": "Young spirit",
+        "ieneko.place": "Eastern Mendoza &nbsp;·&nbsp; El Zampal, Tupungato &nbsp;·&nbsp; Mendoza",
+        "ieneko.band": "60% Bonarda · 40% Cereza &nbsp;·&nbsp; Eastern Mendoza &amp; El Zampal &nbsp;·&nbsp; 900 m a.s.l.",
+        "ieneko.description": "The cat gazing at the night under the crescent moon: a young, approachable and poetic wine.",
+        "ieneko.vineyard.0.0": "Variety",
+        "ieneko.vineyard.1.0": "Bonarda origin",
+        "ieneko.vineyard.1.1": "Eastern Mendoza (Rivadavia, San Martín)",
+        "ieneko.vineyard.2.0": "Cereza origin",
+        "ieneko.vineyard.3.0": "Training",
+        "ieneko.vineyard.3.1": "Traditional pergola",
+        "ieneko.vineyard.4.0": "Soil",
+        "ieneko.vineyard.4.1": "Sandy loam / shallow sandy",
+        "ieneko.vineyard.5.0": "Altitude",
+        "ieneko.vineyard.5.1": "900 m a.s.l.",
+        "ieneko.process.0.0": "Crushing",
+        "ieneko.process.0.1": "Gentle crushing and destemming of the two varieties separately, to preserve the integrity of the berry and its natural freshness.",
+        "ieneko.process.1.0": "Fermentation",
+        "ieneko.process.1.1": "Skin-contact fermentation of the two varieties separately, at an average temperature of 20 °C with native yeasts. During fermentation we gently homogenize the musts with their skins, achieving delicate aromas and structures.",
+        "ieneko.process.2.0": "Aging",
+        "ieneko.process.2.1": "The Cereza is kept in masonry tanks; the Bonarda is kept partly in masonry tanks and the rest in third-use barrels.",
+        "ieneko.map_heading": "Two origins, one wine",
+        "ieneko.maps.0.label": "60% Bonarda · East",
+        "ieneko.maps.0.text": "Born on the plains of eastern Mendoza, between Rivadavia and San Martín: generous sunshine, deep soils and a constant breeze.",
+        "ieneko.maps.0.breadcrumb.2": "Eastern Mendoza",
+        "ieneko.maps.1.text": "Located in the heart of the Uco Valley, El Zampal sits at 950 m above sea level in the Tupungato department, Mendoza.",
+        "ieneko.maps.1.breadcrumb.2": "Uco Valley"
+      },
+      "pt": {
+        "title": "Ficha Técnica",
+        "back": "&larr; Voltar",
+        "badge": "Ficha Técnica",
+        "vineyard.label": "Vinhedo",
+        "vineyard.title": "Origem e Identidade",
+        "process.label": "Elaboração",
+        "process.title": "Processo",
+        "map.label": "Procedência",
+        "map.open": "Abrir no Google Maps",
+        "title.full": "Ieneko · Ficha Técnica",
+        "ieneko.subtitle": "O Felino Noturno",
+        "ieneko.tagline": "Espírito jovem",
+        "ieneko.place": "Leste de Mendoza &nbsp;·&nbsp; El Zampal, Tupungato &nbsp;·&nbsp; Mendoza",
+        "ieneko.band": "60% Bonarda · 40% Cereza &nbsp;·&nbsp; Leste de Mendoza e El Zampal &nbsp;·&nbsp; 900 m de altitude",
+        "ieneko.description": "O gato contemplando a noite sob a lua crescente: um vinho jovem, acessível e poético.",
+        "ieneko.vineyard.0.0": "Variedade",
+        "ieneko.vineyard.1.0": "Origem Bonarda",
+        "ieneko.vineyard.1.1": "Leste de Mendoza (Rivadavia, San Martín)",
+        "ieneko.vineyard.2.0": "Origem Cereza",
+        "ieneko.vineyard.3.0": "Condução",
+        "ieneko.vineyard.3.1": "Latada tradicional",
+        "ieneko.vineyard.4.0": "Solo",
+        "ieneko.vineyard.4.1": "Franco-arenoso / arenoso pouco profundo",
+        "ieneko.vineyard.5.0": "Altitude",
+        "ieneko.vineyard.5.1": "900 m de altitude",
+        "ieneko.process.0.0": "Moagem",
+        "ieneko.process.0.1": "Moagem e desengace delicados das duas variedades separadamente, a fim de preservar a integridade da baga e o seu frescor natural.",
+        "ieneko.process.1.0": "Fermentação",
+        "ieneko.process.1.1": "Fermentação com as cascas das duas variedades separadamente, a uma temperatura média de 20 °C e com leveduras nativas. Durante a fermentação realizamos uma homogeneização suave dos mostos com as suas cascas, obtendo aromas e estruturas delicadas.",
+        "ieneko.process.2.0": "Estágio",
+        "ieneko.process.2.1": "O Cereza é armazenado em tanques de alvenaria; a Bonarda, uma parte em tanques de alvenaria e o restante em barricas de terceiro uso.",
+        "ieneko.map_heading": "Duas origens, um vinho",
+        "ieneko.maps.0.label": "60% Bonarda · Leste",
+        "ieneko.maps.0.text": "Nascido na planície do leste de Mendoza, entre Rivadavia e San Martín: sol generoso, solos profundos e uma brisa constante.",
+        "ieneko.maps.0.breadcrumb.2": "Leste de Mendoza",
+        "ieneko.maps.1.text": "Localizado no coração do Vale de Uco, El Zampal fica a 950 m de altitude no departamento de Tupungato, Mendoza.",
+        "ieneko.maps.1.breadcrumb.2": "Vale de Uco"
+      }
+    };
+  </script>
+  <script src="../assets/js/lang.js"></script>
 
 </body>
 </html>
