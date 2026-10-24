@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-i18n="title.full">Origami · Ficha Técnica</title>
+  <meta name="description" content="Ficha técnica de Origami, de Parral y Tiempo Wines: viñedo, elaboración y procedencia.">
+  <meta name="author" content="Parral y Tiempo Wines">
+  <meta name="copyright" content="© Parral y Tiempo Wines. Todos los derechos reservados.">
+  <meta name="theme-color" content="#0B0F17">
   <link rel="icon" type="image/png" href="../assets/img/logo-link.png">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
@@ -97,6 +101,8 @@
     .footer-contact { font-size: 13px; color: var(--text-2); letter-spacing: 0.05em; line-height: 2.1; }
     .footer-contact a { color: var(--accent); text-decoration: none; }
     .footer-contact a:hover { text-decoration: underline; }
+    .footer-legal { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: 11px; letter-spacing: 0.1em; line-height: 1.9; color: var(--text-3); }
+    .footer-warning { font-weight: 500; text-transform: uppercase; color: var(--text-2); }
 
     @media (max-width: 760px) {
       .topbar { padding: 1rem 1.25rem; }
@@ -205,8 +211,15 @@
       <a href="mailto:hanamiwines@outlook.com.ar">hanamiwines@outlook.com.ar</a><br>
       Mendoza, Argentina
     </div>
+    <div class="footer-legal">
+      <p class="footer-warning" data-i18n="legal.warning">Beber con moderación. Prohibida su venta a menores de 18 años.</p>
+      <p>&copy; <span class="legal-year">2026</span> Parral y Tiempo Wines &middot; <span data-i18n="legal.rights">Todos los derechos reservados.</span></p>
+    </div>
   </footer>
 
+  <script>
+    document.querySelectorAll('.legal-year').forEach(y => { y.textContent = new Date().getFullYear(); });
+  </script>
   <script>
     window.I18N = {
       "en": {
@@ -219,6 +232,8 @@
         "process.title": "Process",
         "map.label": "Provenance",
         "map.open": "Open in Google Maps",
+        "legal.warning": "Drink responsibly. Sale to persons under 18 is prohibited.",
+        "legal.rights": "All rights reserved.",
         "title.full": "Origami · Tech Sheet",
         "origami.subtitle": "The Art of Folding",
         "origami.tagline": "Precision, paper and freshness",
@@ -247,6 +262,8 @@
         "process.title": "Processo",
         "map.label": "Procedência",
         "map.open": "Abrir no Google Maps",
+        "legal.warning": "Beba com moderação. Proibida a venda para menores de 18 anos.",
+        "legal.rights": "Todos os direitos reservados.",
         "title.full": "Origami · Ficha Técnica",
         "origami.subtitle": "A Arte da Dobra",
         "origami.tagline": "Precisão, papel e frescor",

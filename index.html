@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>PARRAL Y TIEMPO WINES</title>
+<meta name="description" content="Parral y Tiempo Wines: proyecto boutique de vinos de sed del Este mendocino. Conocé Hanami, Ieneko y Origami.">
+<meta name="author" content="Parral y Tiempo Wines">
+<meta name="copyright" content="© Parral y Tiempo Wines. Todos los derechos reservados.">
+<meta name="theme-color" content="#0B0F17">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Parral y Tiempo Wines">
+<meta property="og:title" content="Parral y Tiempo Wines">
+<meta property="og:description" content="Proyecto boutique de vinos de sed del Este mendocino. Conocé Hanami, Ieneko y Origami.">
+<meta property="og:locale" content="es_AR">
 <link rel="icon" type="image/png" href="assets/img/logo-link.png">
 <style>
   :root {
@@ -255,6 +264,10 @@
   .arg-tooltip small.is-off { color: var(--text-muted); }
   .arg-credit { margin-top: 10px; font-size: 0.55rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--text-muted); text-decoration: none; opacity: 0.6; }
   .arg-credit:hover { opacity: 1; }
+
+  /* Pie legal (debajo de la barra de navegación en la última vista) */
+  .legal { position: absolute; left: 0; right: 0; bottom: 10px; z-index: 2; text-align: center; font-size: 0.6rem; letter-spacing: 0.15em; line-height: 1.7; color: var(--text-muted); pointer-events: none; }
+  .legal__warning { font-weight: 700; text-transform: uppercase; color: var(--text-secondary); }
   .province-tag { cursor: pointer; }
   .province-tag.is-selected { border-color: var(--hanami); box-shadow: 0 6px 15px rgba(255,82,119,0.25); }
   .province-tag.is-selected::before { background: var(--hanami); }
@@ -298,6 +311,8 @@
       opacity: 1; clip-path: none; transform: none; pointer-events: auto; z-index: auto;
       padding: 80px 0; transition: none; will-change: auto;
     }
+    .scene--presence { flex-direction: column; padding-bottom: 32px; }
+    .legal { position: relative; bottom: auto; margin-top: 56px; padding: 0 20px; }
     .flash, .nav { display: none; }
 
     /* Intro: ocupa la primera pantalla y la flecha invita a bajar */
@@ -462,7 +477,7 @@
           <div class="origin__meta">
             <div class="origin__meta-item">
               <div class="origin__meta-label" data-i18n="origin.region">Región</div>
-              <div class="origin__meta-value" data-i18n="origin.region.value">Este Mendocino</div>
+              <div class="origin__meta-value" data-i18n="origin.region.value">Este Mendocino - Valle de Uco</div>
             </div>
             <div class="origin__meta-item">
               <div class="origin__meta-label" data-i18n="origin.soil">Suelo</div>
@@ -722,6 +737,11 @@
           </div>
         </div>
       </div>
+
+      <footer class="legal">
+        <p class="legal__warning" data-i18n="legal.warning">Beber con moderación. Prohibida su venta a menores de 18 años.</p>
+        <p class="legal__copy">&copy; <span class="legal__year">2026</span> Parral y Tiempo Wines &middot; <span data-i18n="legal.rights">Todos los derechos reservados.</span></p>
+      </footer>
     </section>
 
   </div>
@@ -759,7 +779,7 @@ window.I18N = {
     'origin.region': 'Region',
     'origin.soil': 'Soil',
     'origin.climate': 'Climate',
-    'origin.region.value': 'Eastern Mendoza',
+    'origin.region.value': 'Eastern Mendoza - Uco Valley',
     'origin.soil.value': 'Sandy loam <br> Alluvial plain',
     'origin.climate.value': 'Temperate continental<br>High sun exposure and wide thermal range',
     'origin.map': 'Map of Mendoza by department',
@@ -790,7 +810,9 @@ window.I18N = {
     'wa.msg': 'Hi Parral y Tiempo Wines! I saw your website and I would like to receive information about your wines.',
     'map.presence': 'Parral y Tiempo presence',
     'map.soon': 'Coming soon',
-    'map.vineyards': 'Parral y Tiempo vineyards'
+    'map.vineyards': 'Parral y Tiempo vineyards',
+    'legal.warning': 'Drink responsibly. Sale to persons under 18 is prohibited.',
+    'legal.rights': 'All rights reserved.'
   },
   pt: {
     'nav.story': 'Origem da Parral y Tiempo',
@@ -816,7 +838,7 @@ window.I18N = {
     'origin.region': 'Região',
     'origin.soil': 'Solo',
     'origin.climate': 'Clima',
-    'origin.region.value': 'Leste de Mendoza',
+    'origin.region.value': 'Leste de Mendoza - Vale de Uco',
     'origin.soil.value': 'Franco-arenoso <br> Aluvial de planície',
     'origin.climate.value': 'Continental temperado<br>Grande insolação e amplitude térmica',
     'origin.map': 'Mapa de Mendoza por departamentos',
@@ -847,7 +869,9 @@ window.I18N = {
     'wa.msg': 'Olá Parral y Tiempo Wines! Vi o site de vocês e gostaria de receber informações sobre os seus vinhos.',
     'map.presence': 'Presença Parral y Tiempo',
     'map.soon': 'Em breve',
-    'map.vineyards': 'Vinhedos Parral y Tiempo'
+    'map.vineyards': 'Vinhedos Parral y Tiempo',
+    'legal.warning': 'Beba com moderação. Proibida a venda para menores de 18 anos.',
+    'legal.rights': 'Todos os direitos reservados.'
   }
 };
 </script>
@@ -1064,6 +1088,9 @@ window.I18N = {
   };
   updateWhatsApp();
   window.addEventListener('langchange', updateWhatsApp);
+
+  // año del copyright siempre actualizado
+  document.querySelectorAll('.legal__year').forEach(y => { y.textContent = new Date().getFullYear(); });
 
   // Ajuste a pantallas bajas (notebooks 720/768): si el contenido de una vista
   // no entra en el alto de la pantalla, se achica proporcionalmente.
