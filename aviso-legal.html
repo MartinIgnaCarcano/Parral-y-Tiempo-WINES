@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="title">Aviso legal · Parral y Tiempo Wines</title>
+  <meta name="description" content="Aviso legal de Parral y Tiempo Wines: titularidad, propiedad intelectual, consumo responsable y datos personales.">
+  <meta name="author" content="Parral y Tiempo Wines">
+  <meta name="copyright" content="© Parral y Tiempo Wines. Todos los derechos reservados.">
+  <meta name="theme-color" content="#0B0F17">
+  <link rel="icon" type="image/png" href="assets/img/logo-link.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent: #FF5277;
+      --bg: #0B0F17;
+      --surface: rgba(22, 30, 46, 0.7);
+      --line: rgba(255, 255, 255, 0.1);
+      --text: #F8FAFC;
+      --text-2: #94A3B8;
+      --text-3: #64748B;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: var(--bg); font-family: 'Jost', sans-serif; color: var(--text); -webkit-font-smoothing: antialiased; }
+    a { color: var(--accent); }
+
+    .topbar { display: flex; justify-content: space-between; align-items: center; padding: 1.25rem 2rem; }
+    .back { font-size: 11px; letter-spacing: 0.25em; text-transform: uppercase; text-decoration: none; color: var(--text-2); transition: color 0.3s ease; }
+    .back:hover { color: var(--accent); }
+
+    .content { max-width: 760px; margin: 0 auto; padding: 2rem 2rem 4rem; }
+    .eyebrow { display: flex; align-items: center; gap: 12px; font-size: 10px; letter-spacing: 0.35em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    .eyebrow::after { content: ''; width: 40px; height: 1px; background: var(--accent); opacity: 0.6; }
+    h1 { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: clamp(40px, 7vw, 60px); letter-spacing: 0.04em; line-height: 1.1; }
+    .updated { font-size: 12px; color: var(--text-3); margin-top: 0.75rem; letter-spacing: 0.05em; }
+    .intro { font-size: 15px; line-height: 1.8; color: var(--text-2); margin-top: 1.75rem; }
+
+    .sections { display: flex; flex-direction: column; gap: 0.9rem; margin-top: 2.5rem; counter-reset: sec; }
+    .section { background: var(--surface); border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 14px; padding: 1.25rem 1.5rem; counter-increment: sec; }
+    .section h2 { font-size: 11px; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 8px; }
+    .section h2::before { content: counter(sec, decimal-leading-zero) ' · '; color: var(--accent); }
+    .section p { font-size: 14px; line-height: 1.8; color: var(--text-2); }
+
+    .footer { padding: 2.5rem 2rem; text-align: center; border-top: 2px solid var(--accent); background: #080B12; font-size: 11px; letter-spacing: 0.1em; line-height: 1.9; color: var(--text-3); }
+    .footer-warning { font-weight: 500; text-transform: uppercase; color: var(--text-2); }
+
+    @media (max-width: 600px) {
+      .topbar { padding: 1rem 1.25rem; }
+      .content { padding: 1.5rem 1rem 3rem; }
+      .section { padding: 1.1rem 1.15rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="back" href="index.html" data-i18n="back">&larr; Volver</a>
+    <div data-lang-slot></div>
+  </header>
+
+  <main class="content">
+    <p class="eyebrow">Parral y Tiempo Wines</p>
+    <h1 data-i18n="h1">Aviso legal</h1>
+    <p class="updated" data-i18n="updated">Última actualización: 24 de octubre de 2026</p>
+    <p class="intro" data-i18n="intro">Al navegar este sitio aceptás las condiciones que se detallan a continuación. Si tenés dudas, escribinos por cualquiera de nuestros canales de contacto.</p>
+
+    <div class="sections">
+      <section class="section">
+        <h2 data-i18n="s1.t">Titular del sitio</h2>
+        <p data-i18n="s1.p">Este sitio web pertenece a Parral y Tiempo Wines, proyecto vitivinícola boutique de Mendoza, Argentina. Contacto: <a href="mailto:hanami@outlook.com.ar">hanami@outlook.com.ar</a> · <a href="https://wa.me/5492613747660" target="_blank" rel="noopener">+54 9 261 374-7660</a>.</p>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="s2.t">Carácter informativo</h2>
+        <p data-i18n="s2.p">El sitio tiene fines exclusivamente informativos y no realiza ventas en línea. Los precios, la disponibilidad y las condiciones de venta se acuerdan directamente a través de nuestros canales de contacto. La información técnica de los vinos puede variar entre cosechas.</p>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="s3.t">Propiedad intelectual</h2>
+        <p data-i18n="s3.p">Las marcas, logotipos, nombres de los vinos (Hanami, Ieneko y Origami), etiquetas, textos, ilustraciones y fotografías de este sitio son propiedad de Parral y Tiempo Wines o se utilizan con autorización de sus titulares, y están protegidos por la legislación argentina de propiedad intelectual (Ley 11.723) y de marcas. No se permite reproducirlos, modificarlos ni utilizarlos con fines comerciales sin autorización previa y por escrito.</p>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="s4.t">Consumo responsable</h2>
+        <p data-i18n="s4.p">Los contenidos de este sitio están dirigidos a personas mayores de 18 años. Beber con moderación. Prohibida su venta a menores de 18 años (Ley 24.788).</p>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="s5.t">Datos personales</h2>
+        <p data-i18n="s5.p">Este sitio no recopila datos personales ni utiliza cookies de seguimiento. La preferencia de idioma se guarda solo en tu navegador. Si nos escribís por correo electrónico o WhatsApp, usaremos tus datos únicamente para responder tu consulta, conforme a la Ley 25.326 de Protección de los Datos Personales.</p>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="s6.t">Enlaces a sitios de terceros</h2>
+        <p data-i18n="s6.p">El sitio incluye enlaces y contenidos de terceros, como Google Maps, WhatsApp y simplemaps.com. No somos responsables de sus contenidos ni de sus políticas de privacidad.</p>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="s7.t">Responsabilidad</h2>
+        <p data-i18n="s7.p">Procuramos que la información publicada sea correcta y esté actualizada, pero puede contener errores u omisiones. Parral y Tiempo Wines no se responsabiliza por las decisiones que se tomen en base a ella ni por interrupciones o fallas en el funcionamiento del sitio.</p>
+      </section>
+
+      <section class="section">
+        <h2 data-i18n="s8.t">Legislación aplicable</h2>
+        <p data-i18n="s8.p">Este aviso se rige por las leyes de la República Argentina. Ante cualquier controversia, serán competentes los tribunales ordinarios de la Provincia de Mendoza.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-warning" data-i18n="legal.warning">Beber con moderación. Prohibida su venta a menores de 18 años.</p>
+    <p>&copy; <span class="legal-year">2026</span> Parral y Tiempo Wines &middot; <span data-i18n="legal.rights">Todos los derechos reservados.</span></p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.legal-year').forEach(y => { y.textContent = new Date().getFullYear(); });
+    window.I18N = {
+      en: {
+        'title': 'Legal notice · Parral y Tiempo Wines',
+        'back': '&larr; Back',
+        'h1': 'Legal notice',
+        'updated': 'Last updated: October 24, 2026',
+        'intro': 'By browsing this site you accept the conditions set out below. If you have any questions, write to us through any of our contact channels.',
+        's1.t': 'Site owner',
+        's1.p': 'This website belongs to Parral y Tiempo Wines, a boutique wine project from Mendoza, Argentina. Contact: <a href="mailto:hanami@outlook.com.ar">hanami@outlook.com.ar</a> · <a href="https://wa.me/5492613747660" target="_blank" rel="noopener">+54 9 261 374-7660</a>.',
+        's2.t': 'Informational purpose',
+        's2.p': 'This site is for informational purposes only and does not sell online. Prices, availability and terms of sale are agreed directly through our contact channels. The technical information about the wines may vary between vintages.',
+        's3.t': 'Intellectual property',
+        's3.p': 'The brands, logos, wine names (Hanami, Ieneko and Origami), labels, texts, illustrations and photographs on this site are the property of Parral y Tiempo Wines or are used with the permission of their owners, and are protected by Argentine intellectual property law (Law 11,723) and trademark law. They may not be reproduced, modified or used for commercial purposes without prior written permission.',
+        's4.t': 'Responsible drinking',
+        's4.p': 'The content of this site is intended for people over 18. Drink responsibly. Sale to persons under 18 is prohibited (Law 24,788).',
+        's5.t': 'Personal data',
+        's5.p': 'This site does not collect personal data or use tracking cookies. Your language preference is stored only in your browser. If you write to us by email or WhatsApp, we will use your data only to answer your inquiry, in accordance with Argentine Personal Data Protection Law 25,326.',
+        's6.t': 'Third-party links',
+        's6.p': 'This site includes links and content from third parties such as Google Maps, WhatsApp and simplemaps.com. We are not responsible for their content or their privacy policies.',
+        's7.t': 'Liability',
+        's7.p': 'We strive to keep the information on this site accurate and up to date, but it may contain errors or omissions. Parral y Tiempo Wines is not liable for decisions made based on it or for interruptions or failures in the operation of the site.',
+        's8.t': 'Governing law',
+        's8.p': 'This notice is governed by the laws of the Argentine Republic. Any dispute shall be submitted to the ordinary courts of the Province of Mendoza.',
+        'legal.warning': 'Drink responsibly. Sale to persons under 18 is prohibited.',
+        'legal.rights': 'All rights reserved.'
+      },
+      pt: {
+        'title': 'Aviso legal · Parral y Tiempo Wines',
+        'back': '&larr; Voltar',
+        'h1': 'Aviso legal',
+        'updated': 'Última atualização: 24 de outubro de 2026',
+        'intro': 'Ao navegar neste site, você aceita as condições descritas a seguir. Se tiver dúvidas, escreva para nós por qualquer um dos nossos canais de contato.',
+        's1.t': 'Titular do site',
+        's1.p': 'Este site pertence à Parral y Tiempo Wines, projeto vitivinícola boutique de Mendoza, Argentina. Contato: <a href="mailto:hanami@outlook.com.ar">hanami@outlook.com.ar</a> · <a href="https://wa.me/5492613747660" target="_blank" rel="noopener">+54 9 261 374-7660</a>.',
+        's2.t': 'Caráter informativo',
+        's2.p': 'O site tem fins exclusivamente informativos e não realiza vendas on-line. Preços, disponibilidade e condições de venda são combinados diretamente pelos nossos canais de contato. As informações técnicas dos vinhos podem variar entre safras.',
+        's3.t': 'Propriedade intelectual',
+        's3.p': 'As marcas, logotipos, nomes dos vinhos (Hanami, Ieneko e Origami), rótulos, textos, ilustrações e fotografias deste site são propriedade da Parral y Tiempo Wines ou são utilizados com autorização de seus titulares, e estão protegidos pela legislação argentina de propriedade intelectual (Lei 11.723) e de marcas. Não é permitido reproduzi-los, modificá-los ou utilizá-los para fins comerciais sem autorização prévia por escrito.',
+        's4.t': 'Consumo responsável',
+        's4.p': 'Os conteúdos deste site são destinados a maiores de 18 anos. Beba com moderação. Proibida a venda para menores de 18 anos (Lei 24.788).',
+        's5.t': 'Dados pessoais',
+        's5.p': 'Este site não coleta dados pessoais nem utiliza cookies de rastreamento. A preferência de idioma é salva apenas no seu navegador. Se você nos escrever por e-mail ou WhatsApp, usaremos seus dados somente para responder à sua consulta, de acordo com a Lei argentina 25.326 de Proteção de Dados Pessoais.',
+        's6.t': 'Links para sites de terceiros',
+        's6.p': 'O site inclui links e conteúdos de terceiros, como Google Maps, WhatsApp e simplemaps.com. Não nos responsabilizamos por seus conteúdos nem por suas políticas de privacidade.',
+        's7.t': 'Responsabilidade',
+        's7.p': 'Procuramos manter as informações publicadas corretas e atualizadas, mas elas podem conter erros ou omissões. A Parral y Tiempo Wines não se responsabiliza por decisões tomadas com base nelas nem por interrupções ou falhas no funcionamento do site.',
+        's8.t': 'Legislação aplicável',
+        's8.p': 'Este aviso é regido pelas leis da República Argentina. Para qualquer controvérsia, serão competentes os tribunais ordinários da Província de Mendoza.',
+        'legal.warning': 'Beba com moderação. Proibida a venda para menores de 18 anos.',
+        'legal.rights': 'Todos os direitos reservados.'
+      }
+    };
+  </script>
+  <script src="assets/js/lang.js"></script>
+
+</body>
+</html>

@@ -102,6 +102,8 @@
     .footer-contact a { color: var(--accent); text-decoration: none; }
     .footer-contact a:hover { text-decoration: underline; }
     .footer-legal { margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--line); font-size: 11px; letter-spacing: 0.1em; line-height: 1.9; color: var(--text-3); }
+    .footer-legal-link { color: inherit; text-underline-offset: 2px; }
+    .footer-legal-link:hover { color: var(--accent); }
     .footer-warning { font-weight: 500; text-transform: uppercase; color: var(--text-2); }
 
     @media (max-width: 760px) {
@@ -213,7 +215,7 @@
     </div>
     <div class="footer-legal">
       <p class="footer-warning" data-i18n="legal.warning">Beber con moderación. Prohibida su venta a menores de 18 años.</p>
-      <p>&copy; <span class="legal-year">2026</span> Parral y Tiempo Wines &middot; <span data-i18n="legal.rights">Todos los derechos reservados.</span></p>
+      <p>&copy; <span class="legal-year">2026</span> Parral y Tiempo Wines &middot; <span data-i18n="legal.rights">Todos los derechos reservados.</span> &middot; <a class="footer-legal-link" href="../aviso-legal.html" data-i18n="legal.notice">Aviso legal</a></p>
     </div>
   </footer>
 
@@ -234,6 +236,7 @@
         "map.open": "Open in Google Maps",
         "legal.warning": "Drink responsibly. Sale to persons under 18 is prohibited.",
         "legal.rights": "All rights reserved.",
+        "legal.notice": "Legal notice",
         "title.full": "Origami · Tech Sheet",
         "origami.subtitle": "The Art of Folding",
         "origami.tagline": "Precision, paper and freshness",
@@ -264,6 +267,7 @@
         "map.open": "Abrir no Google Maps",
         "legal.warning": "Beba com moderação. Proibida a venda para menores de 18 anos.",
         "legal.rights": "Todos os direitos reservados.",
+        "legal.notice": "Aviso legal",
         "title.full": "Origami · Ficha Técnica",
         "origami.subtitle": "A Arte da Dobra",
         "origami.tagline": "Precisão, papel e frescor",

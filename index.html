@@ -267,6 +267,8 @@
 
   /* Pie legal (debajo de la barra de navegación en la última vista) */
   .legal { position: absolute; left: 0; right: 0; bottom: 10px; z-index: 2; text-align: center; font-size: 0.6rem; letter-spacing: 0.15em; line-height: 1.7; color: var(--text-muted); pointer-events: none; }
+  .legal__link { color: inherit; text-decoration: underline; text-underline-offset: 2px; pointer-events: auto; }
+  .legal__link:hover { color: var(--hanami); }
   .legal__warning { font-weight: 700; text-transform: uppercase; color: var(--text-secondary); }
   .province-tag { cursor: pointer; }
   .province-tag.is-selected { border-color: var(--hanami); box-shadow: 0 6px 15px rgba(255,82,119,0.25); }
@@ -740,7 +742,7 @@
 
       <footer class="legal">
         <p class="legal__warning" data-i18n="legal.warning">Beber con moderación. Prohibida su venta a menores de 18 años.</p>
-        <p class="legal__copy">&copy; <span class="legal__year">2026</span> Parral y Tiempo Wines &middot; <span data-i18n="legal.rights">Todos los derechos reservados.</span></p>
+        <p class="legal__copy">&copy; <span class="legal__year">2026</span> Parral y Tiempo Wines &middot; <span data-i18n="legal.rights">Todos los derechos reservados.</span> &middot; <a class="legal__link" href="aviso-legal.html" data-i18n="legal.notice">Aviso legal</a></p>
       </footer>
     </section>
 
@@ -812,7 +814,8 @@ window.I18N = {
     'map.soon': 'Coming soon',
     'map.vineyards': 'Parral y Tiempo vineyards',
     'legal.warning': 'Drink responsibly. Sale to persons under 18 is prohibited.',
-    'legal.rights': 'All rights reserved.'
+    'legal.rights': 'All rights reserved.',
+    'legal.notice': 'Legal notice'
   },
   pt: {
     'nav.story': 'Origem da Parral y Tiempo',
@@ -871,7 +874,8 @@ window.I18N = {
     'map.soon': 'Em breve',
     'map.vineyards': 'Vinhedos Parral y Tiempo',
     'legal.warning': 'Beba com moderação. Proibida a venda para menores de 18 anos.',
-    'legal.rights': 'Todos os direitos reservados.'
+    'legal.rights': 'Todos os direitos reservados.',
+    'legal.notice': 'Aviso legal'
   }
 };
 </script>
